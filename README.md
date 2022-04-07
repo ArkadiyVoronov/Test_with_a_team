@@ -1,4 +1,4 @@
-##rss_reader_tests
+## rss_reader_tests
 Selenium python rss reader tests
 
 Our test app https://rss-litovsky.vercel.app/

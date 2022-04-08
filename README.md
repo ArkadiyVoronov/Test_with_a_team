@@ -10,6 +10,9 @@ Use python 3.8 + Create and activate virtual environments
 ```angular2html
 python3 -m venv env
 source env/bin/activate
+pip install pytest
+pip install webdriver-manager
+pip install selenium
 ```
 pre-commit https://pre-commit.com/
 ```angular2html

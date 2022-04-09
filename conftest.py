@@ -1,6 +1,7 @@
 import pytest
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+
 from fixtures.app import Application
 
 
@@ -21,3 +22,10 @@ def app(request):
     app = Application(driver, url)
     yield app
     app.quit()
+
+
+@pytest.fixture
+def open_register_page(app):
+    """Перед прохождением тестов открыть страницу Register."""
+    app.register_page.open_register_page()
+

@@ -1,5 +1,7 @@
 from selenium.webdriver.common.by import By
 
+from models.register import RegisterUserModel
+
 
 class RegisterPage:
     CHAPTER_REGISTER = (By.ID, "register-link")
@@ -17,19 +19,30 @@ class RegisterPage:
         chapter_register = self.app.driver.find_element(*self.CHAPTER_REGISTER)
         chapter_register.click()
 
-    def fill_in_email(self, value: str):
+    def register_user(self, data: RegisterUserModel):
+        self._fill_in_email(data.user)
+        self._fill_in_password1(data.password_1)
+        self._fill_in_password2(data.password_2)
+        self._register_button_click()
+
+    def _register_button_click(self):
+        register_button = self.app.driver.find_element(*self.REGISTER_BUTTON)
+        register_button.click()
+
+    def _fill_in_email(self, value: str):
         email_field = self.app.driver.find_element(*self.EMAIL_FIELD)
         email_field.send_keys(value)
 
-    def fill_in_password1(self, value: str):
+    def _fill_in_password1(self, value: str):
         email_field = self.app.driver.find_element(*self.PASSWORD_FIELD)
         email_field.send_keys(value)
 
-    def fill_in_password2(self, value: str):
+    def _fill_in_password2(self, value: str):
         email_field = self.app.driver.find_element(*self.REPEAT_PASSWORD_FIELD)
         email_field.send_keys(value)
 
     def get_error_text(self) -> str:
+        #заменить его на register user
         register_button = self.app.driver.find_element(*self.REGISTER_BUTTON)
         register_button.click()
         error = self.app.driver.find_element(*self.ERROR_TEXT)

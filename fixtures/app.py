@@ -16,5 +16,6 @@ class Application:
         self.login_page = LoginPage(self)
         self.register_page = RegisterPage(self)
 
+
     def quit(self):
         self.driver.quit()

@@ -11,6 +11,7 @@ class TestRegisterPage:
         app.register_page.open_register_page()
         data = RegisterUserModel.random()
         app.register_page.register_user(data=data)
+        assert app.register_page.get_success_text() == Notice.SUCCESSFUL_ACTION
 
     def test_invalid_email_registration(self, app):
         app.register_page.open_register_page()

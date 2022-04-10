@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 
-from models.register import RegisterUserModel
+from models.register import RegisterUserModel, InvalidEmailRegisterUserModel, InvalidPasswordRegisterUserModel, \
+    ShortPasswordRegisterUserModel
 
 
 class RegisterPage:
@@ -25,6 +26,24 @@ class RegisterPage:
         self._fill_in_password2(data.password_2)
         self._register_button_click()
 
+    def invalid_email_register_user(self, data: InvalidEmailRegisterUserModel):
+        self._fill_in_email(data.user)
+        self._fill_in_password1(data.password_1)
+        self._fill_in_password2(data.password_2)
+        self._register_button_click()
+
+    def invalid_password_register_user(self, data: InvalidPasswordRegisterUserModel):
+        self._fill_in_email(data.user)
+        self._fill_in_password1(data.password_1)
+        self._fill_in_password2(data.password_2)
+        self._register_button_click()
+
+    def short_password_register_user(self, data: ShortPasswordRegisterUserModel):
+        self._fill_in_email(data.user)
+        self._fill_in_password1(data.password_1)
+        self._fill_in_password2(data.password_2)
+        self._register_button_click()
+
     def _register_button_click(self):
         register_button = self.app.driver.find_element(*self.REGISTER_BUTTON)
         register_button.click()
@@ -41,7 +60,8 @@ class RegisterPage:
         email_field = self.app.driver.find_element(*self.REPEAT_PASSWORD_FIELD)
         email_field.send_keys(value)
 
-    def get_error_text(self) -> str:  # заменить его на register user
+    def get_error_text(self) -> str:
+        #заменить его на register user
         register_button = self.app.driver.find_element(*self.REGISTER_BUTTON)
         register_button.click()
         error = self.app.driver.find_element(*self.ERROR_TEXT)

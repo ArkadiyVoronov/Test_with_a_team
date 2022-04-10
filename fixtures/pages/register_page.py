@@ -41,8 +41,7 @@ class RegisterPage:
         email_field = self.app.driver.find_element(*self.REPEAT_PASSWORD_FIELD)
         email_field.send_keys(value)
 
-    def get_error_text(self) -> str:
-        #заменить его на register user
+    def get_error_text(self) -> str:  # заменить его на register user
         register_button = self.app.driver.find_element(*self.REGISTER_BUTTON)
         register_button.click()
         error = self.app.driver.find_element(*self.ERROR_TEXT)

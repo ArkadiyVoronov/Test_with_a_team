@@ -11,6 +11,7 @@ class RegisterPage:
     REPEAT_PASSWORD_FIELD = (By.ID, "password2")
     REGISTER_BUTTON = (By.ID, "register")
     ERROR_TEXT = (By.CLASS_NAME, "card-panel")
+    SUCCESS_TEXT = (By.CLASS_NAME, "toast")
 
     def __init__(self, app):
         self.app = app
@@ -66,3 +67,9 @@ class RegisterPage:
         register_button.click()
         error = self.app.driver.find_element(*self.ERROR_TEXT)
         return error.text
+
+    def get_success_text(self) -> str:
+        register_button = self.app.driver.find_element(*self.REGISTER_BUTTON)
+        register_button.click()
+        success = self.app.driver.find_element(*self.SUCCESS_TEXT)
+        return success.text

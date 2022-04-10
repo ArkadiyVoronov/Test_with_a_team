@@ -28,4 +28,3 @@ def app(request):
 def open_register_page(app):
     """Перед прохождением тестов открыть страницу Register."""
     app.register_page.open_register_page()
-

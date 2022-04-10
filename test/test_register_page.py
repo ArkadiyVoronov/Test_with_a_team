@@ -1,33 +1,31 @@
+import time
+
 from fixtures.constants import Notice
+from models.register import RegisterUserModel, InvalidEmailRegisterUserModel, InvalidPasswordRegisterUserModel, \
+    ShortPasswordRegisterUserModel
 
 
 class TestRegisterPage:
 
-    def test_invalid_email(self, app):
-        """
-        1. Указать некорректную почту
-        2. Нажать Register
-        """
+    def test_valid_registration(self, app):
         app.register_page.open_register_page()
-        app.register_page.fill_in_email("test")
-        assert app.register_page.get_error_text() == Notice.ERROR_INVALID_EMAIL
+        data = RegisterUserModel.random()
+        app.register_page.register_user(data=data)
 
-    def test_too_short_pass(self, app):
-        """
-        1. Указать короткий пароль
-        2. Нажать Register
-        """
+    def test_invalid_email_registration(self, app):
         app.register_page.open_register_page()
-        app.register_page.fill_in_password1("111")
+        data = InvalidEmailRegisterUserModel.random()
+        app.register_page.invalid_email_register_user(data=data)
+        assert app.register_page.get_error_text() == f"Error, {data.user} is not email address!"
+
+    def test_invalid_password_registration(self, app):
+        app.register_page.open_register_page()
+        data = InvalidPasswordRegisterUserModel.random()
+        app.register_page.invalid_password_register_user(data=data)
+        assert app.register_page.get_error_text() == Notice.ERROR_DIFFERENT_PASS
+
+    def test_short_password_registration(self, app):
+        app.register_page.open_register_page()
+        data = ShortPasswordRegisterUserModel.random()
+        app.register_page.invalid_password_register_user(data=data)
         assert app.register_page.get_error_text() == Notice.ERROR_PASS_TOO_SHORT
-
-    def test_different_pass(self, app):
-        """
-        1. Указать пароль
-        2. Нажать Register
-        """
-        app.register_page.open_register_page()
-        app.register_page.fill_in_password1("111")
-        app.register_page.fill_in_password2("222")
-        assert app.register_page.get_error_text() == Notice.ERROR_PASS_TOO_SHORT
-

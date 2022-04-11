@@ -30,13 +30,17 @@ pytest
 ```
 ---
 
-Проверка кода
-```
-pre-commit https://pre-commit.com/
-```angular2html
-pip install pre-commit
-pre-commit install
-```
+Проверка кода организована через pre-commit
+Подробнее https://pre-commit.com/
+В текущей реализации: 
+* trailing-whitespace - обрезает пробелы
+* check-json - проверяет файлы формата json
+* check-yaml - проверяет файлы формата yaml
+* debug-statements - проверяет наличие импорта отладчика и вызовов py 37+ breakpoint() в исходном коде python.
+* requirements-txt-fixer - сортирует записи в requirements.txt
+* flake8 - обеспечивает согласованность стилей в проекте
+
+---
 
 Чек-лист команды:
 + [x] договорились о работе в ветках, наименование фича_бранч

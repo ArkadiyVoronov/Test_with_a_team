@@ -4,7 +4,7 @@ fake = Faker()
 
 
 class RegisterUserModel:
-    def __init__(self, user: str=None, password_1: str=None, password_2: str=None):
+    def __init__(self, user: str = None, password_1: str = None, password_2: str = None):
         self.user = user
         self.password_1 = password_1
         self.password_2 = password_2
@@ -18,6 +18,7 @@ class RegisterUserModel:
 
 class InvalidEmailRegisterUserModel:
     """Генерация фейковых данных для невалидной регистрации по email"""
+
     def __init__(self, user: str = None, password_1: str = None, password_2: str = None):
         self.user = user
         self.password_1 = password_1
@@ -32,6 +33,7 @@ class InvalidEmailRegisterUserModel:
 
 class InvalidPasswordRegisterUserModel:
     """Генерация фейковых данных для невалидной регистрации по паролю"""
+
     def __init__(self, user: str = None, password_1: str = None, password_2: str = None):
         self.user = user
         self.password_1 = password_1
@@ -47,6 +49,7 @@ class InvalidPasswordRegisterUserModel:
 
 class ShortPasswordRegisterUserModel:
     """Генерация фейковых данных для невалидной регистрации по паролю < 7 символов"""
+
     def __init__(self, user: str = None, password_1: str = None, password_2: str = None):
         self.user = user
         self.password_1 = password_1

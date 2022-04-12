@@ -1,8 +1,6 @@
-import time
-
 from fixtures.constants import Notice
-from models.register import RegisterUserModel, InvalidEmailRegisterUserModel, InvalidPasswordRegisterUserModel, \
-    ShortPasswordRegisterUserModel
+from models.register import RegisterUserModel, InvalidEmailRegisterUserModel,\
+    InvalidPasswordRegisterUserModel, ShortPasswordRegisterUserModel
 
 
 class TestRegisterPage:
@@ -17,7 +15,8 @@ class TestRegisterPage:
         app.register_page.open_register_page()
         data = InvalidEmailRegisterUserModel.random()
         app.register_page.invalid_email_register_user(data=data)
-        assert app.register_page.get_error_text() == f"Error, {data.user} is not email address!"
+        assert app.register_page.get_error_text() ==\
+               f"Error, {data.user} is not email address!"
 
     def test_invalid_password_registration(self, app):
         app.register_page.open_register_page()

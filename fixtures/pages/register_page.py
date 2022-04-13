@@ -1,10 +1,10 @@
 from selenium.webdriver.common.by import By
+from fixtures.pages.base_page import BasePage
+from models.register import RegisterUserModel, InvalidEmailRegisterUserModel,\
+    InvalidPasswordRegisterUserModel, ShortPasswordRegisterUserModel
 
-from models.register import RegisterUserModel, InvalidEmailRegisterUserModel, InvalidPasswordRegisterUserModel, \
-    ShortPasswordRegisterUserModel
 
-
-class RegisterPage:
+class RegisterPage(BasePage):
     CHAPTER_REGISTER = (By.ID, "register-link")
     EMAIL_FIELD = (By.ID, "name")
     PASSWORD_FIELD = (By.ID, "password1")
@@ -13,63 +13,40 @@ class RegisterPage:
     ERROR_TEXT = (By.CLASS_NAME, "card-panel")
     SUCCESS_TEXT = (By.CLASS_NAME, "toast")
 
-    def __init__(self, app):
-        self.app = app
-
     def open_register_page(self):
-        self.app.driver.get(self.app.url)
-        chapter_register = self.app.driver.find_element(*self.CHAPTER_REGISTER)
-        chapter_register.click()
+        self.open_page(self.app.url)
+        self.click(locator=self.CHAPTER_REGISTER)
 
     def register_user(self, data: RegisterUserModel):
-        self._fill_in_email(data.user)
-        self._fill_in_password1(data.password_1)
-        self._fill_in_password2(data.password_2)
-        self._register_button_click()
+        self.fill(locator=self.EMAIL_FIELD, value=data.user)
+        self.fill(locator=self.PASSWORD_FIELD, value=data.password_1)
+        self.fill(locator=self.REPEAT_PASSWORD_FIELD, value=data.password_2)
+        self.click(locator=self.REGISTER_BUTTON)
 
     def invalid_email_register_user(self, data: InvalidEmailRegisterUserModel):
-        self._fill_in_email(data.user)
-        self._fill_in_password1(data.password_1)
-        self._fill_in_password2(data.password_2)
-        self._register_button_click()
+        self.fill(locator=self.EMAIL_FIELD, value=data.user)
+        self.fill(locator=self.PASSWORD_FIELD, value=data.password_1)
+        self.fill(locator=self.REPEAT_PASSWORD_FIELD, value=data.password_2)
+        self.click(locator=self.REGISTER_BUTTON)
 
     def invalid_password_register_user(self, data: InvalidPasswordRegisterUserModel):
-        self._fill_in_email(data.user)
-        self._fill_in_password1(data.password_1)
-        self._fill_in_password2(data.password_2)
-        self._register_button_click()
+        self.fill(locator=self.EMAIL_FIELD, value=data.user)
+        self.fill(locator=self.PASSWORD_FIELD, value=data.password_1)
+        self.fill(locator=self.REPEAT_PASSWORD_FIELD, value=data.password_2)
+        self.click(locator=self.REGISTER_BUTTON)
 
     def short_password_register_user(self, data: ShortPasswordRegisterUserModel):
-        self._fill_in_email(data.user)
-        self._fill_in_password1(data.password_1)
-        self._fill_in_password2(data.password_2)
-        self._register_button_click()
-
-    def _register_button_click(self):
-        register_button = self.app.driver.find_element(*self.REGISTER_BUTTON)
-        register_button.click()
-
-    def _fill_in_email(self, value: str):
-        email_field = self.app.driver.find_element(*self.EMAIL_FIELD)
-        email_field.send_keys(value)
-
-    def _fill_in_password1(self, value: str):
-        email_field = self.app.driver.find_element(*self.PASSWORD_FIELD)
-        email_field.send_keys(value)
-
-    def _fill_in_password2(self, value: str):
-        email_field = self.app.driver.find_element(*self.REPEAT_PASSWORD_FIELD)
-        email_field.send_keys(value)
+        self.fill(locator=self.EMAIL_FIELD, value=data.user)
+        self.fill(locator=self.PASSWORD_FIELD, value=data.password_1)
+        self.fill(locator=self.REPEAT_PASSWORD_FIELD, value=data.password_2)
+        self.click(locator=self.REGISTER_BUTTON)
 
     def get_error_text(self) -> str:
-        #заменить его на register user
-        register_button = self.app.driver.find_element(*self.REGISTER_BUTTON)
-        register_button.click()
-        error = self.app.driver.find_element(*self.ERROR_TEXT)
-        return error.text
+        self.click(locator=self.REGISTER_BUTTON)
+        error = self.text(locator=self.ERROR_TEXT)
+        return error
 
     def get_success_text(self) -> str:
-        register_button = self.app.driver.find_element(*self.REGISTER_BUTTON)
-        register_button.click()
-        success = self.app.driver.find_element(*self.SUCCESS_TEXT)
-        return success.text
+        self.click(locator=self.REGISTER_BUTTON)
+        success = self.text(locator=self.SUCCESS_TEXT)
+        return success

@@ -1,10 +1,10 @@
 # Автотесты для сайта https://berpress.github.io/react-shop/
 
----
+
 
 https://img.shields.io/github/issues-pr-closed/ArkadiyVoronov/Test_with_a_team.svg
 
----
+
 
 # Локальный запуск
 
@@ -34,7 +34,7 @@ pytest
 ```
 ---
 
-Проверка кода организована через pre-commit
+# Проверка кода организована через pre-commit
 Подробнее https://pre-commit.com/
 В текущей реализации: 
 * trailing-whitespace - обрезает пробелы
@@ -43,8 +43,11 @@ pytest
 * debug-statements - проверяет наличие импорта отладчика и вызовов py 37+ breakpoint() в исходном коде python.
 * requirements-txt-fixer - сортирует записи в requirements.txt
 * flake8 - обеспечивает согласованность стилей в проекте
+---
+# CI организован через https://semgrep.dev/
 
 ---
+
 
 Чек-лист команды:
 + [x] договорились о работе в ветках, наименование фича_бранч
@@ -55,8 +58,8 @@ pytest
 
 Чек-лист нашего проекта:
 + [ ] readMe, в процессе
-+ [ ] добавить ci\cd
++ [x] добавить ci\cd
 + [x] добавить линтер
-+ [ ] добавить логи
++ [x] добавить логи
 + [ ] добавить отчеты
 

@@ -1,7 +1,11 @@
+import logging
+
 from selenium.webdriver.common.by import By
 from fixtures.pages.base_page import BasePage
 from models.register import RegisterUserModel, InvalidEmailRegisterUserModel,\
     InvalidPasswordRegisterUserModel, ShortPasswordRegisterUserModel
+
+logger = logging.getLogger("react_shop")
 
 
 class RegisterPage(BasePage):
@@ -24,6 +28,7 @@ class RegisterPage(BasePage):
         self.click(locator=self.REGISTER_BUTTON)
 
     def invalid_email_register_user(self, data: InvalidEmailRegisterUserModel):
+        logger.info(f"Verification invalid email {data.user}")
         self.fill(locator=self.EMAIL_FIELD, value=data.user)
         self.fill(locator=self.PASSWORD_FIELD, value=data.password_1)
         self.fill(locator=self.REPEAT_PASSWORD_FIELD, value=data.password_2)

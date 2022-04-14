@@ -27,5 +27,5 @@ class TestRegisterPage:
     def test_short_password_registration(self, app):
         app.register_page.open_register_page()
         data = ShortPasswordRegisterUserModel.random()
-        app.register_page.invalid_password_register_user(data=data)
+        app.register_page.short_password_register_user(data=data)
         assert app.register_page.get_error_text() == Notice.ERROR_PASS_TOO_SHORT

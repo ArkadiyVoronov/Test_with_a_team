@@ -45,6 +45,10 @@ pytest
 # CI организован через https://semgrep.dev/
 
 ---
+# Логирование реализовано через пакет logging
+Подробнее https://docs.python.org/3/library/logging.html
+
+---
 
 
 Чек-лист команды:

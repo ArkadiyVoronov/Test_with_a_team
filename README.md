@@ -1,6 +1,7 @@
 # Автотесты для сайта https://berpress.github.io/react-shop/
 
-https://img.shields.io/github/issues-pr-closed/ArkadiyVoronov/Test_with_a_team.svg
+
+<img src="https://img.shields.io/github/issues-pr-closed/ArkadiyVoronov/Test_with_a_team.svg">
 
 
 # Локальный запуск

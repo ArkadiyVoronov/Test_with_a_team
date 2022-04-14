@@ -1,9 +1,13 @@
+import logging
+
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
 from fixtures.app import Application
+
+logger = logging.getLogger("react_shop")
 
 
 def pytest_addoption(parser):
@@ -19,6 +23,7 @@ def pytest_addoption(parser):
 @pytest.fixture
 def app(request):
     url = request.config.getoption("--url")
+    logger.info(f"Start app on {url}")
     headless = request.config.getoption("--headless")
     chrome_options = Options()
     chrome_options.add_argument("window-size=1920,1080")

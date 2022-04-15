@@ -1,11 +1,11 @@
 import logging
-
 import pytest
+import requests
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
-
 from fixtures.app import Application
+from models.register import RegisterUserModel
 
 logger = logging.getLogger("react_shop")
 
@@ -36,3 +36,12 @@ def app(request):
     app = Application(driver, url)
     yield app
     app.quit()
+
+
+@pytest.fixture
+def register_user() -> RegisterUserModel:
+    data = RegisterUserModel.random()
+    body = {'username': data.user, 'password': data.password_1}
+    req = requests.post('https://stores-tests-api.herokuapp.com/register', body)
+    assert req.status_code == 201
+    return data

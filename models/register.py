@@ -1,3 +1,4 @@
+import pendulum as pendulum
 from faker import Faker
 
 fake = Faker()
@@ -12,7 +13,7 @@ class RegisterUserModel:
 
     @staticmethod
     def random():
-        user = fake.email()
+        user = f"{pendulum.now().timestamp()}-{fake.email()}"
         password = fake.password()
         domain = fake.domain_name()
         return RegisterUserModel(user=user, password_1=password, password_2=password, domain=domain)

@@ -1,7 +1,6 @@
 import logging
 from selenium.webdriver.common.by import By
 from fixtures.pages.base_page import BasePage
-from models.register import RegisterUserModel
 
 logger = logging.getLogger("react_shop")
 
@@ -18,10 +17,10 @@ class LoginPage(BasePage):
         self.open_page(self.app.url)
         self.click(locator=self.CHAPTER_LOGIN)
 
-    def entry_data_login(self, data: RegisterUserModel):
-        logger.info(f"Login user with email={data.user} and password {data.password_1}")
-        self.fill(locator=self.EMAIL_FIELD, value=data.user)
-        self.fill(locator=self.PASSWORD_FIELD, value=data.password_1)
+    def entry_data_login(self, user: str, password: str):
+        logger.info(f"Login user with email={user} and password {password}")
+        self.fill(locator=self.EMAIL_FIELD, value=user)
+        self.fill(locator=self.PASSWORD_FIELD, value=password)
         self.click(locator=self.LOGIN_BUTTON)
 
     def get_event_text(self) -> str:

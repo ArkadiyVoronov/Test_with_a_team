@@ -38,7 +38,7 @@ def app(request):
     app.quit()
 
 
-@pytest.fixture
+@pytest.fixture(scope="class")
 def register_user() -> RegisterUserModel:
     data = RegisterUserModel.random()
     body = {'username': data.user, 'password': data.password_1}

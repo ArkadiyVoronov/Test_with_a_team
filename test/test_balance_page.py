@@ -36,7 +36,7 @@ class TestBalancePage:
         """
         app.login_page.open_login_page()
         app.login_page.entry_data_login(register_user)
-        time.sleep(1)
+        # time.sleep(1)
         app.balance_page.open_balance_page()
         data = BalanceUserModel.random()
         data.card_number = "34563456345634"
@@ -49,7 +49,7 @@ class TestBalancePage:
         """
         app.login_page.open_login_page()
         app.login_page.entry_data_login(register_user)
-        time.sleep(1)
+        # time.sleep(1)
         app.balance_page.open_balance_page()
         data = BalanceUserModel.random()
         data.card_date = None
@@ -62,7 +62,7 @@ class TestBalancePage:
         """
         app.login_page.open_login_page()
         app.login_page.entry_data_login(register_user)
-        time.sleep(1)
+        # time.sleep(1)
         app.balance_page.open_balance_page()
         data = BalanceUserModel.random()
         data.card_total = None
@@ -75,7 +75,7 @@ class TestBalancePage:
         """
         app.login_page.open_login_page()
         app.login_page.entry_data_login(register_user)
-        time.sleep(1)
+        # time.sleep(1)
         app.balance_page.open_balance_page()
         data = BalanceUserModel.random()
         app.balance_page.balance_transfer(data=data, is_agree=False)

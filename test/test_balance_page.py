@@ -10,7 +10,7 @@ class TestBalancePage:
         Пополнение баланса.
         """
         app.login_page.open_login_page()
-        app.login_page.entry_data_login(register_user)
+        app.login_page.entry_data_login(register_user.user, register_user.password_1)
         time.sleep(1)
         app.balance_page.open_balance_page()
         data = BalanceUserModel.random()
@@ -22,7 +22,7 @@ class TestBalancePage:
         Пополнение баланса без заполнения имени держателя карты.
         """
         app.login_page.open_login_page()
-        app.login_page.entry_data_login(register_user)
+        app.login_page.entry_data_login(register_user.user, register_user.password_1)
         time.sleep(1)
         app.balance_page.open_balance_page()
         data = BalanceUserModel.random()
@@ -35,7 +35,7 @@ class TestBalancePage:
         Пополнение баланса без заполнения номера карты.
         """
         app.login_page.open_login_page()
-        app.login_page.entry_data_login(register_user)
+        app.login_page.entry_data_login(register_user.user, register_user.password_1)
         time.sleep(1)
         app.balance_page.open_balance_page()
         data = BalanceUserModel.random()
@@ -48,7 +48,7 @@ class TestBalancePage:
         Пополнение баланса без заполнения даты действия карты.
         """
         app.login_page.open_login_page()
-        app.login_page.entry_data_login(register_user)
+        app.login_page.entry_data_login(register_user.user, register_user.password_1)
         time.sleep(1)
         app.balance_page.open_balance_page()
         data = BalanceUserModel.random()
@@ -61,7 +61,7 @@ class TestBalancePage:
         Пополнение баланса без заполнения суммы.
         """
         app.login_page.open_login_page()
-        app.login_page.entry_data_login(register_user)
+        app.login_page.entry_data_login(register_user.user, register_user.password_1)
         time.sleep(1)
         app.balance_page.open_balance_page()
         data = BalanceUserModel.random()
@@ -74,7 +74,7 @@ class TestBalancePage:
         Пополнение баланса без принятия правил(чекбокс).
         """
         app.login_page.open_login_page()
-        app.login_page.entry_data_login(register_user)
+        app.login_page.entry_data_login(register_user.user, register_user.password_1)
         time.sleep(1)
         app.balance_page.open_balance_page()
         data = BalanceUserModel.random()

@@ -18,7 +18,7 @@ class LoginPage(BasePage):
         self.click(locator=self.CHAPTER_LOGIN)
 
     def entry_data_login(self, user: str, password: str):
-        logger.info(f"Login user with email={user} and password {password}")
+        logger.info(f"Login user with email={user}")
         self.fill(locator=self.EMAIL_FIELD, value=user)
         self.fill(locator=self.PASSWORD_FIELD, value=password)
         self.click(locator=self.LOGIN_BUTTON)

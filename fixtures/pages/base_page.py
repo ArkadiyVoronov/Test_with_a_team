@@ -1,3 +1,4 @@
+from selenium.webdriver import Keys
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
@@ -27,3 +28,7 @@ class BasePage:
 
     def open_page(self, url: str):
         self.app.driver.get(url)
+
+    def refresh_page(self, locator, wait_time=20):
+        element = self._find_element(locator, wait_time)
+        element.send_keys(Keys.F5)

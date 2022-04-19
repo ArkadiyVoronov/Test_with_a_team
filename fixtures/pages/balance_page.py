@@ -1,5 +1,4 @@
 import logging
-
 from selenium.webdriver.common.by import By
 from fixtures.pages.base_page import BasePage
 from models.balance import BalanceUserModel
@@ -23,7 +22,7 @@ class BalancePage(BasePage):
         self.click(locator=self.BALANCE_LINK)
 
     def balance_transfer(self, data: BalanceUserModel, is_agree: bool = True):
-        logger.info("Verification balance")
+        logger.info(f"Balance increased by {data.card_total}")
         self.fill(locator=self.USER_NAME, value=data.user)
         self.fill(locator=self.CARD_NUMBER, value=data.card_number)
         self.fill(locator=self.CARD_DATE, value=data.card_date)

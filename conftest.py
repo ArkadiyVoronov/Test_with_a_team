@@ -61,9 +61,9 @@ def login_user(app, register_user):
 
 
 @pytest.fixture()
-def update_balance(login_user):
+def update_balance(app, login_user):
     """Фикстура пополнения баланса пользователя."""
     app.balance_page.open_balance_page()
     data = BalanceUserModel.random()
     app.balance_page.balance_transfer(data=data)
-    # TODO: понять почему не проходит пополнение
+    return data

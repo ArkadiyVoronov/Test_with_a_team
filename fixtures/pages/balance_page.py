@@ -13,7 +13,7 @@ class BalancePage(BasePage):
     CARD_DATE = (By.ID, "data-card")
     CARD_MONEY = (By.ID, "data-money")
     LABEL_AGREE = (By.ID, "agree")
-    BUTTON_TRANSFER = (By.CLASS_NAME, "waves-effect")
+    BUTTON_TRANSFER = (By.XPATH, "//div[@class='row']/button")
     SUCCESS_TEXT = (By.CLASS_NAME, "toast")
     ERROR_TEXT = (By.CLASS_NAME, "card-panel")
 

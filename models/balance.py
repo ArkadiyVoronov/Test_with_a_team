@@ -1,6 +1,5 @@
-from faker import Faker
 import random
-from typing import Any
+from faker import Faker
 
 fake = Faker()
 

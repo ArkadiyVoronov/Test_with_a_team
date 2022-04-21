@@ -35,7 +35,9 @@ pytest
 
 # Проверка кода организована через pre-commit
 Подробнее https://pre-commit.com/
+
 ---
+
 # CI организован через https://semgrep.dev/
 
 ---
@@ -43,7 +45,9 @@ pytest
 Подробнее https://docs.python.org/3/library/logging.html
 
 ---
+# (Allure-report)(https://arkadiyvoronov.github.io/Test_with_a_team/)
 
+---
 
 Чек-лист команды:
 + [x] договорились о работе в ветках, наименование фича_бранч
@@ -57,5 +61,5 @@ pytest
 + [x] добавить ci\cd
 + [x] добавить линтер
 + [x] добавить логи
-+ [ ] добавить отчеты
++ [x] добавить отчеты
 

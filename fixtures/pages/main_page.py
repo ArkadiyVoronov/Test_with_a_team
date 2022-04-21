@@ -56,15 +56,19 @@ class MainPage(BasePage):
     def check_error(self, error):
         """Проверяем, что среди уведомлений есть необходимое нам"""
         toasts = self.get_all_elements(locator=self.SUCCESS_TEXT)
-        print(toasts)
+        for n in toasts:
+            print(n)
         return error in toasts
 
-    def waiting_balance_update(self, money, wait_time=10):
+    def wait_notice(self):
+        self.get_all_elements(locator=self.SUCCESS_TEXT)
+
+    def waiting_balance_update(self, money, wait_time=10) -> str:
         """Ожидаем обновление баланса, постоянно опрашивая элемент"""
         timestamp = time.time() + wait_time
         while time.time() < timestamp:
             balance = self.text(locator=self.BALANCE_LINK)
-            if balance.find(money):
-                break
+            if money in balance:
+                return "Баланс обновлен"
             time.sleep(0.5)
         raise Exception("Баланс не обновился")

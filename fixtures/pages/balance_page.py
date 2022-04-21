@@ -40,3 +40,7 @@ class BalancePage(BasePage):
         self.click(locator=self.BUTTON_TRANSFER)
         error = self.text(locator=self.ERROR_TEXT)
         return error
+
+    def wait_notice(self):
+        """Ожидаем появление уведомления."""
+        self.text(locator=self.SUCCESS_TEXT)

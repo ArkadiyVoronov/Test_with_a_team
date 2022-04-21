@@ -58,6 +58,7 @@ def login_user(app, register_user):
     """Фикстура авторизации пользователя."""
     app.login_page.open_login_page()
     app.login_page.entry_data_login(register_user.user, register_user.password_1)
+    app.login_page.wait_notice()
 
 
 @pytest.fixture()
@@ -66,4 +67,5 @@ def update_balance(app, login_user):
     app.balance_page.open_balance_page()
     data = BalanceUserModel.random()
     app.balance_page.balance_transfer(data=data)
+    app.balance_page.wait_notice()
     return data

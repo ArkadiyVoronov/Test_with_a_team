@@ -27,3 +27,7 @@ class LoginPage(BasePage):
         self.click(locator=self.LOGIN_BUTTON)
         success = self.text(locator=self.SUCCESS_TEXT)
         return success
+
+    def wait_notice(self):
+        """Ожидаем появление уведомления."""
+        self.text(locator=self.SUCCESS_TEXT)

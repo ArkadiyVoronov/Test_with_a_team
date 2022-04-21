@@ -1,9 +1,12 @@
 # Автотесты для сайта https://berpress.github.io/react-shop/
 
-[![Python application](https://github.com/ArkadiyVoronov/Test_with_a_team/actions/workflows/python-app.yml/badge.svg?event=deployment_status)](https://github.com/ArkadiyVoronov/Test_with_a_team/actions/workflows/python-app.yml)
+
+[![Python application](https://github.com/ArkadiyVoronov/Test_with_a_team/actions/workflows/python-app.yml/badge.svg?branch=main&event=status)](https://github.com/ArkadiyVoronov/Test_with_a_team/actions/workflows/python-app.yml)
+
 <img src="https://img.shields.io/github/issues-pr-closed/ArkadiyVoronov/Test_with_a_team.svg">
 [![Build Status](https://app.travis-ci.com/ArkadiyVoronov/Test_with_a_team.svg?branch=main)](https://app.travis-ci.com/ArkadiyVoronov/Test_with_a_team)
 
+[![Python application](https://github.com/ArkadiyVoronov/Test_with_a_team/actions/workflows/python-app.yml/badge.svg?event=deployment_status)](https://github.com/ArkadiyVoronov/Test_with_a_team/actions/workflows/python-app.yml)
 
 # Локальный запуск
 

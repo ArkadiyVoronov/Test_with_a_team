@@ -1,39 +1,50 @@
 name: Python tests using allure example
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 */4 * * *'
+on: [push]
 
 jobs:
-  selenium_tests:
+  build:
 
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - name: 🐍 Step 1 - Set up Python 3.10
-        uses: actions/setup-python@v3
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest requests selenium faker allure-pytest allure-python-commons
+          pip install webdriver-manager==3.5.2
+          pip install -r requirements.txt
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v2
         with:
           python-version: '3.10'
-      - name: 🔗 Step 2 - Install dependencies
-        run: |
-        python -m pip install --upgrade pip
-        pip install flake8 pytest
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        working-directory: {name of your project root here}
-      - name: 📂 Step 3 - Create a temp artifact folder named `output`
-        run: |
-          mkdir output
-      - name: 🦊 Step 4 - Run Firefox tests and generate Allure folder inside `output` folder
-        run: |
-          pytest -vs tests/ --browser firefox --alluredir={provide the directory where you want the allure folder to go}
-        working-directory: {name of your project root here}
-      - name: 📊 Step 5 - Collect Allure files and generate allure-report folder
-        run: |
-          allure generate output/
-      - name: 🎁 Step 6 - Publishing Allure artifact to GitHub Actions
-        uses: actions/upload-artifact@v2
+
+      - name: Run Test
+        if: always()
+        run: pytest --alluredir=allure-results
+        continue-on-error: true
+
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
         with:
-          name: allure-report
-          path: allure-report
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Allure Report action from marketplace
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        with:
+          allure_results: allure-results
+          allure_history: allure-history
+
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history

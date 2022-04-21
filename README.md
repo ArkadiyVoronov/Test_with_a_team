@@ -45,7 +45,7 @@ pytest
 Подробнее https://docs.python.org/3/library/logging.html
 
 ---
-# (Allure-report)(https://arkadiyvoronov.github.io/Test_with_a_team/)
+# [Allure-report]: https://arkadiyvoronov.github.io/Test_with_a_team/
 
 ---
 

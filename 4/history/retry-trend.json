@@ -1,4 +1,12 @@
 [ {
+  "buildOrder" : 4,
+  "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "run" : 19,
+    "retry" : 0
+  }
+}, {
   "data" : {
     "run" : 0,
     "retry" : 0

@@ -1,1 +1,191 @@
-[ ]
+[ {
+  "uid" : "258f106fb8d0d0c6",
+  "name" : "test_balance_transfer",
+  "time" : {
+    "start" : 1650553735044,
+    "stop" : 1650553735044,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4499f3c463d76d36",
+  "name" : "test_empty_card_name",
+  "time" : {
+    "start" : 1650553740523,
+    "stop" : 1650553740523,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "70968d80fde21448",
+  "name" : "test_buy_empty_basket",
+  "time" : {
+    "start" : 1650553748973,
+    "stop" : 1650553748973,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "a4dfbcb24e5f678c",
+  "name" : "test_login_with_invalid_user",
+  "time" : {
+    "start" : 1650553746752,
+    "stop" : 1650553746752,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "a6f5006cccca5443",
+  "name" : "test_error_small_balance",
+  "time" : {
+    "start" : 1650553748975,
+    "stop" : 1650553748975,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b98de3abfaa81fe",
+  "name" : "test_empty_checkbox",
+  "time" : {
+    "start" : 1650553743489,
+    "stop" : 1650553743489,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "89ae6b14c6be27d2",
+  "name" : "test_empty_card_number",
+  "time" : {
+    "start" : 1650553741270,
+    "stop" : 1650553741270,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "6eabca75b33a9bae",
+  "name" : "test_valid_registration",
+  "time" : {
+    "start" : 1650553750772,
+    "stop" : 1650553750772,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "c9570aabb62c5f36",
+  "name" : "test_login_with_invalid_password",
+  "time" : {
+    "start" : 1650553745282,
+    "stop" : 1650553745282,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "443df8fb6cf60db4",
+  "name" : "test_short_password_registration",
+  "time" : {
+    "start" : 1650553753993,
+    "stop" : 1650553753993,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "e6320c348d415328",
+  "name" : "test_success_shopping",
+  "time" : {
+    "start" : 1650553750038,
+    "stop" : 1650553750038,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "da6353e47bd7a4a9",
+  "name" : "test_successful_login",
+  "time" : {
+    "start" : 1650553744222,
+    "stop" : 1650553744222,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "248fa71d56af40ba",
+  "name" : "test_non_existent_user",
+  "time" : {
+    "start" : 1650553747505,
+    "stop" : 1650553747505,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "2aa4831a49da1f53",
+  "name" : "test_invalid_password_registration",
+  "time" : {
+    "start" : 1650553752240,
+    "stop" : 1650553752240,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "c8125a20ec20ffe5",
+  "name" : "test_add_product_to_basket",
+  "time" : {
+    "start" : 1650553748240,
+    "stop" : 1650553748240,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "e2b6a1c6adb262cf",
+  "name" : "test_login_with_empty_password",
+  "time" : {
+    "start" : 1650553746017,
+    "stop" : 1650553746017,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "833663f2d93d424",
+  "name" : "test_empty_money",
+  "time" : {
+    "start" : 1650553742754,
+    "stop" : 1650553742754,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "aac07c634482886f",
+  "name" : "test_invalid_email_registration",
+  "time" : {
+    "start" : 1650553751506,
+    "stop" : 1650553751506,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4948679e3e2c3f1",
+  "name" : "test_empty_card_date",
+  "time" : {
+    "start" : 1650553742019,
+    "stop" : 1650553742019,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

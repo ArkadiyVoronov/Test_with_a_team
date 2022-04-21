@@ -1,4 +1,5 @@
 import pytest
+import time
 from selenium.common.exceptions import NoSuchElementException
 
 from fixtures.constants import Notice
@@ -37,6 +38,7 @@ class TestMainPage:
         app.main_page.open_basket()
         [app.main_page.increase_products() for n in range(1, 5)]
         app.main_page.buy_product()
+        app.main_page.wait_notice()
         assert app.main_page.check_error(Notice.ERROR)
 
     def test_success_shopping(self, app, update_balance):
@@ -47,4 +49,6 @@ class TestMainPage:
         app.main_page.add_product_to_basket()
         app.main_page.open_basket()
         app.main_page.buy_product()
-        assert app.main_page.get_event_text() == f"Product {prod} buy sucess!"
+        time.sleep(1)
+        app.main_page.wait_notice()
+        assert app.main_page.check_error(f"Product {prod} buy sucess!")

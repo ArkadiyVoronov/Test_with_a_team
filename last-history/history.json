@@ -2,13 +2,23 @@
   "7089706b72c53a65ac161ee0629b6b0c" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "3d8d848498b22003",
+      "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/3d8d848498b22003",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55a9931c7ad3 <unknown>\n#1 0x55a992f27568 <unknown>\n#2 0x55a992f4ab37 <unknown>\n#3 0x55a992f4623a <unknown>\n#4 0x55a992f812ba <unknown>\n#5 0x55a992f7b4e3 <unknown>\n#6 0x55a992f50d1a <unknown>\n#7 0x55a992f51e75 <unknown>\n#8 0x55a9931f5efd <unknown>\n#9 0x55a99320f19b <unknown>\n#10 0x55a9931f7c65 <unknown>\n#11 0x55a99320fec8 <unknown>\n#12 0x55a9931eb360 <unknown>\n#13 0x55a99322ba68 <unknown>\n#14 0x55a99322bbe8 <unknown>\n#15 0x55a9932457fd <unknown>\n#16 0x7faf2a590609 <unknown>",
+      "time" : {
+        "start" : 1650553595629,
+        "stop" : 1650553595629,
+        "duration" : 0
+      }
+    }, {
       "uid" : "724d8a7f7c289e72",
       "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/724d8a7f7c289e72",
       "status" : "broken",
@@ -23,13 +33,23 @@
   "09b650026b167d1bbd53af708590c677" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "a374752bda2acfec",
+      "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/a374752bda2acfec",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55be56dc4ad3 <unknown>\n#1 0x55be56b24568 <unknown>\n#2 0x55be56b47b37 <unknown>\n#3 0x55be56b4323a <unknown>\n#4 0x55be56b7e2ba <unknown>\n#5 0x55be56b784e3 <unknown>\n#6 0x55be56b4dd1a <unknown>\n#7 0x55be56b4ee75 <unknown>\n#8 0x55be56df2efd <unknown>\n#9 0x55be56e0c19b <unknown>\n#10 0x55be56df4c65 <unknown>\n#11 0x55be56e0cec8 <unknown>\n#12 0x55be56de8360 <unknown>\n#13 0x55be56e28a68 <unknown>\n#14 0x55be56e28be8 <unknown>\n#15 0x55be56e427fd <unknown>\n#16 0x7f9021e89609 <unknown>",
+      "time" : {
+        "start" : 1650553586877,
+        "stop" : 1650553586877,
+        "duration" : 0
+      }
+    }, {
       "uid" : "6f7a361609e00d87",
       "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/6f7a361609e00d87",
       "status" : "broken",
@@ -44,13 +64,23 @@
   "3b11f6ebdbf93b807f38902b52cb92e1" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "5501cea13ebac785",
+      "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/5501cea13ebac785",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x563676d38ad3 <unknown>\n#1 0x563676a98568 <unknown>\n#2 0x563676abbb37 <unknown>\n#3 0x563676ab723a <unknown>\n#4 0x563676af22ba <unknown>\n#5 0x563676aec4e3 <unknown>\n#6 0x563676ac1d1a <unknown>\n#7 0x563676ac2e75 <unknown>\n#8 0x563676d66efd <unknown>\n#9 0x563676d8019b <unknown>\n#10 0x563676d68c65 <unknown>\n#11 0x563676d80ec8 <unknown>\n#12 0x563676d5c360 <unknown>\n#13 0x563676d9ca68 <unknown>\n#14 0x563676d9cbe8 <unknown>\n#15 0x563676db67fd <unknown>\n#16 0x7f4f5aad1609 <unknown>",
+      "time" : {
+        "start" : 1650553592861,
+        "stop" : 1650553592861,
+        "duration" : 0
+      }
+    }, {
       "uid" : "6901b0b8f918c38",
       "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/6901b0b8f918c38",
       "status" : "broken",
@@ -65,13 +95,23 @@
   "77434fd78e570e2be9afa7767e058d06" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "70cfdf8223655ee1",
+      "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/70cfdf8223655ee1",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x558e8bb4dad3 <unknown>\n#1 0x558e8b8ad568 <unknown>\n#2 0x558e8b8d0b37 <unknown>\n#3 0x558e8b8cc23a <unknown>\n#4 0x558e8b9072ba <unknown>\n#5 0x558e8b9014e3 <unknown>\n#6 0x558e8b8d6d1a <unknown>\n#7 0x558e8b8d7e75 <unknown>\n#8 0x558e8bb7befd <unknown>\n#9 0x558e8bb9519b <unknown>\n#10 0x558e8bb7dc65 <unknown>\n#11 0x558e8bb95ec8 <unknown>\n#12 0x558e8bb71360 <unknown>\n#13 0x558e8bbb1a68 <unknown>\n#14 0x558e8bbb1be8 <unknown>\n#15 0x558e8bbcb7fd <unknown>\n#16 0x7f8882744609 <unknown>",
+      "time" : {
+        "start" : 1650553593637,
+        "stop" : 1650553593637,
+        "duration" : 0
+      }
+    }, {
       "uid" : "8b2ba7bf3b178a0e",
       "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/8b2ba7bf3b178a0e",
       "status" : "broken",
@@ -86,13 +126,23 @@
   "e9e903630e0aedbf5c98fae8cb3e9b82" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "c316743b125d9ea2",
+      "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/c316743b125d9ea2",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x562bc0329ad3 <unknown>\n#1 0x562bc0089568 <unknown>\n#2 0x562bc00acb37 <unknown>\n#3 0x562bc00a823a <unknown>\n#4 0x562bc00e32ba <unknown>\n#5 0x562bc00dd4e3 <unknown>\n#6 0x562bc00b2d1a <unknown>\n#7 0x562bc00b3e75 <unknown>\n#8 0x562bc0357efd <unknown>\n#9 0x562bc037119b <unknown>\n#10 0x562bc0359c65 <unknown>\n#11 0x562bc0371ec8 <unknown>\n#12 0x562bc034d360 <unknown>\n#13 0x562bc038da68 <unknown>\n#14 0x562bc038dbe8 <unknown>\n#15 0x562bc03a77fd <unknown>\n#16 0x7f122209d609 <unknown>",
+      "time" : {
+        "start" : 1650553588488,
+        "stop" : 1650553588488,
+        "duration" : 0
+      }
+    }, {
       "uid" : "8510157d20bd444",
       "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/8510157d20bd444",
       "status" : "broken",
@@ -107,13 +157,23 @@
   "0bc6c733d10ac808adf48d44b8a0ffea" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "9be8c62f7c5fe8f9",
+      "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/9be8c62f7c5fe8f9",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5612eed2fad3 <unknown>\n#1 0x5612eea8f568 <unknown>\n#2 0x5612eeab2b37 <unknown>\n#3 0x5612eeaae23a <unknown>\n#4 0x5612eeae92ba <unknown>\n#5 0x5612eeae34e3 <unknown>\n#6 0x5612eeab8d1a <unknown>\n#7 0x5612eeab9e75 <unknown>\n#8 0x5612eed5defd <unknown>\n#9 0x5612eed7719b <unknown>\n#10 0x5612eed5fc65 <unknown>\n#11 0x5612eed77ec8 <unknown>\n#12 0x5612eed53360 <unknown>\n#13 0x5612eed93a68 <unknown>\n#14 0x5612eed93be8 <unknown>\n#15 0x5612eedad7fd <unknown>\n#16 0x7f98a7620609 <unknown>",
+      "time" : {
+        "start" : 1650553596411,
+        "stop" : 1650553596411,
+        "duration" : 0
+      }
+    }, {
       "uid" : "4061618870bc4e5f",
       "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/4061618870bc4e5f",
       "status" : "broken",
@@ -128,13 +188,23 @@
   "43500b43c94b462fdc63cdee80f8f8a8" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "297186a28efb367c",
+      "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/297186a28efb367c",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x564c2b805ad3 <unknown>\n#1 0x564c2b565568 <unknown>\n#2 0x564c2b588b37 <unknown>\n#3 0x564c2b58423a <unknown>\n#4 0x564c2b5bf2ba <unknown>\n#5 0x564c2b5b94e3 <unknown>\n#6 0x564c2b58ed1a <unknown>\n#7 0x564c2b58fe75 <unknown>\n#8 0x564c2b833efd <unknown>\n#9 0x564c2b84d19b <unknown>\n#10 0x564c2b835c65 <unknown>\n#11 0x564c2b84dec8 <unknown>\n#12 0x564c2b829360 <unknown>\n#13 0x564c2b869a68 <unknown>\n#14 0x564c2b869be8 <unknown>\n#15 0x564c2b8837fd <unknown>\n#16 0x7fdccad10609 <unknown>",
+      "time" : {
+        "start" : 1650553582813,
+        "stop" : 1650553582813,
+        "duration" : 0
+      }
+    }, {
       "uid" : "e95c82c16706b3ab",
       "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/e95c82c16706b3ab",
       "status" : "broken",
@@ -150,12 +220,22 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
+      "skipped" : 2,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "19cb6f767c638d8e",
+      "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/19cb6f767c638d8e",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: missing notification",
+      "time" : {
+        "start" : 1650553594405,
+        "stop" : 1650553594405,
+        "duration" : 0
+      }
+    }, {
       "uid" : "9125d7c654cc7c4f",
       "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/9125d7c654cc7c4f",
       "status" : "skipped",
@@ -170,13 +250,23 @@
   "01b438911ee3bb8991a6fe66fdbb827e" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "c759eccedf4e347",
+      "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/c759eccedf4e347",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x562de65c5ad3 <unknown>\n#1 0x562de6325568 <unknown>\n#2 0x562de6348b37 <unknown>\n#3 0x562de634423a <unknown>\n#4 0x562de637f2ba <unknown>\n#5 0x562de63794e3 <unknown>\n#6 0x562de634ed1a <unknown>\n#7 0x562de634fe75 <unknown>\n#8 0x562de65f3efd <unknown>\n#9 0x562de660d19b <unknown>\n#10 0x562de65f5c65 <unknown>\n#11 0x562de660dec8 <unknown>\n#12 0x562de65e9360 <unknown>\n#13 0x562de6629a68 <unknown>\n#14 0x562de6629be8 <unknown>\n#15 0x562de66437fd <unknown>\n#16 0x7fb794352609 <unknown>",
+      "time" : {
+        "start" : 1650553597946,
+        "stop" : 1650553597946,
+        "duration" : 0
+      }
+    }, {
       "uid" : "9501914379cebf4c",
       "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/9501914379cebf4c",
       "status" : "broken",
@@ -191,13 +281,23 @@
   "20b9c8919b940e3f8ec3679bda1e6b41" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "c4dd475101e407de",
+      "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/c4dd475101e407de",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55a986578ad3 <unknown>\n#1 0x55a9862d8568 <unknown>\n#2 0x55a9862fbb37 <unknown>\n#3 0x55a9862f723a <unknown>\n#4 0x55a9863322ba <unknown>\n#5 0x55a98632c4e3 <unknown>\n#6 0x55a986301d1a <unknown>\n#7 0x55a986302e75 <unknown>\n#8 0x55a9865a6efd <unknown>\n#9 0x55a9865c019b <unknown>\n#10 0x55a9865a8c65 <unknown>\n#11 0x55a9865c0ec8 <unknown>\n#12 0x55a98659c360 <unknown>\n#13 0x55a9865dca68 <unknown>\n#14 0x55a9865dcbe8 <unknown>\n#15 0x55a9865f67fd <unknown>\n#16 0x7feb44567609 <unknown>",
+      "time" : {
+        "start" : 1650553589279,
+        "stop" : 1650553589279,
+        "duration" : 0
+      }
+    }, {
       "uid" : "c54fda81b815f586",
       "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/c54fda81b815f586",
       "status" : "broken",
@@ -212,13 +312,23 @@
   "1d6e807eebad4f281b5f7793207a3ce9" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "3f028cb18ac11ba9",
+      "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/3f028cb18ac11ba9",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x555a55989ad3 <unknown>\n#1 0x555a556e9568 <unknown>\n#2 0x555a5570cb37 <unknown>\n#3 0x555a5570823a <unknown>\n#4 0x555a557432ba <unknown>\n#5 0x555a5573d4e3 <unknown>\n#6 0x555a55712d1a <unknown>\n#7 0x555a55713e75 <unknown>\n#8 0x555a559b7efd <unknown>\n#9 0x555a559d119b <unknown>\n#10 0x555a559b9c65 <unknown>\n#11 0x555a559d1ec8 <unknown>\n#12 0x555a559ad360 <unknown>\n#13 0x555a559eda68 <unknown>\n#14 0x555a559edbe8 <unknown>\n#15 0x555a55a077fd <unknown>\n#16 0x7efd35595609 <unknown>",
+      "time" : {
+        "start" : 1650553586062,
+        "stop" : 1650553586062,
+        "duration" : 0
+      }
+    }, {
       "uid" : "e5f63f11abc53135",
       "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/e5f63f11abc53135",
       "status" : "broken",
@@ -233,13 +343,23 @@
   "4f2ea27f37071834fc2fa39ccf239962" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "e0b4e1baea556da5",
+      "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/e0b4e1baea556da5",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55a3003c7ad3 <unknown>\n#1 0x55a300127568 <unknown>\n#2 0x55a30014ab37 <unknown>\n#3 0x55a30014623a <unknown>\n#4 0x55a3001812ba <unknown>\n#5 0x55a30017b4e3 <unknown>\n#6 0x55a300150d1a <unknown>\n#7 0x55a300151e75 <unknown>\n#8 0x55a3003f5efd <unknown>\n#9 0x55a30040f19b <unknown>\n#10 0x55a3003f7c65 <unknown>\n#11 0x55a30040fec8 <unknown>\n#12 0x55a3003eb360 <unknown>\n#13 0x55a30042ba68 <unknown>\n#14 0x55a30042bbe8 <unknown>\n#15 0x55a3004457fd <unknown>\n#16 0x7f8d7c560609 <unknown>",
+      "time" : {
+        "start" : 1650553591275,
+        "stop" : 1650553591275,
+        "duration" : 0
+      }
+    }, {
       "uid" : "2a273f72e2ec77dc",
       "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/2a273f72e2ec77dc",
       "status" : "broken",
@@ -254,13 +374,23 @@
   "61867593fdd38e89dac24d2433eb7572" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "424fba84a938faf9",
+      "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/424fba84a938faf9",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x556a32183ad3 <unknown>\n#1 0x556a31ee3568 <unknown>\n#2 0x556a31f06b37 <unknown>\n#3 0x556a31f0223a <unknown>\n#4 0x556a31f3d2ba <unknown>\n#5 0x556a31f374e3 <unknown>\n#6 0x556a31f0cd1a <unknown>\n#7 0x556a31f0de75 <unknown>\n#8 0x556a321b1efd <unknown>\n#9 0x556a321cb19b <unknown>\n#10 0x556a321b3c65 <unknown>\n#11 0x556a321cbec8 <unknown>\n#12 0x556a321a7360 <unknown>\n#13 0x556a321e7a68 <unknown>\n#14 0x556a321e7be8 <unknown>\n#15 0x556a322017fd <unknown>\n#16 0x7f47c29e8609 <unknown>",
+      "time" : {
+        "start" : 1650553587711,
+        "stop" : 1650553587711,
+        "duration" : 0
+      }
+    }, {
       "uid" : "4a419de1b3e488b9",
       "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/4a419de1b3e488b9",
       "status" : "broken",
@@ -275,13 +405,23 @@
   "abe281e69e7e1e8c3f79534f10791ac9" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "ca77d6680a146591",
+      "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/ca77d6680a146591",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x56252a0cead3 <unknown>\n#1 0x562529e2e568 <unknown>\n#2 0x562529e51b37 <unknown>\n#3 0x562529e4d23a <unknown>\n#4 0x562529e882ba <unknown>\n#5 0x562529e824e3 <unknown>\n#6 0x562529e57d1a <unknown>\n#7 0x562529e58e75 <unknown>\n#8 0x56252a0fcefd <unknown>\n#9 0x56252a11619b <unknown>\n#10 0x56252a0fec65 <unknown>\n#11 0x56252a116ec8 <unknown>\n#12 0x56252a0f2360 <unknown>\n#13 0x56252a132a68 <unknown>\n#14 0x56252a132be8 <unknown>\n#15 0x56252a14c7fd <unknown>\n#16 0x7f7ba3512609 <unknown>",
+      "time" : {
+        "start" : 1650553597180,
+        "stop" : 1650553597180,
+        "duration" : 0
+      }
+    }, {
       "uid" : "dfbdd299c72c5466",
       "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/dfbdd299c72c5466",
       "status" : "broken",
@@ -296,13 +436,23 @@
   "60f850f373cad4b08b79193da6847804" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "bfebc455b2cbebbc",
+      "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/bfebc455b2cbebbc",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5638f902bad3 <unknown>\n#1 0x5638f8d8b568 <unknown>\n#2 0x5638f8daeb37 <unknown>\n#3 0x5638f8daa23a <unknown>\n#4 0x5638f8de52ba <unknown>\n#5 0x5638f8ddf4e3 <unknown>\n#6 0x5638f8db4d1a <unknown>\n#7 0x5638f8db5e75 <unknown>\n#8 0x5638f9059efd <unknown>\n#9 0x5638f907319b <unknown>\n#10 0x5638f905bc65 <unknown>\n#11 0x5638f9073ec8 <unknown>\n#12 0x5638f904f360 <unknown>\n#13 0x5638f908fa68 <unknown>\n#14 0x5638f908fbe8 <unknown>\n#15 0x5638f90a97fd <unknown>\n#16 0x7ff3b9cc0609 <unknown>",
+      "time" : {
+        "start" : 1650553594407,
+        "stop" : 1650553594407,
+        "duration" : 0
+      }
+    }, {
       "uid" : "54a9d312674ff5a6",
       "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/54a9d312674ff5a6",
       "status" : "broken",
@@ -317,13 +467,23 @@
   "bc6facd2d4fe631c3d78b1be68860e0e" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "e959f7b50e5c4044",
+      "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/e959f7b50e5c4044",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55734bda3ad3 <unknown>\n#1 0x55734bb03568 <unknown>\n#2 0x55734bb26b37 <unknown>\n#3 0x55734bb2223a <unknown>\n#4 0x55734bb5d2ba <unknown>\n#5 0x55734bb574e3 <unknown>\n#6 0x55734bb2cd1a <unknown>\n#7 0x55734bb2de75 <unknown>\n#8 0x55734bdd1efd <unknown>\n#9 0x55734bdeb19b <unknown>\n#10 0x55734bdd3c65 <unknown>\n#11 0x55734bdebec8 <unknown>\n#12 0x55734bdc7360 <unknown>\n#13 0x55734be07a68 <unknown>\n#14 0x55734be07be8 <unknown>\n#15 0x55734be217fd <unknown>\n#16 0x7fc0f6212609 <unknown>",
+      "time" : {
+        "start" : 1650553590502,
+        "stop" : 1650553590502,
+        "duration" : 0
+      }
+    }, {
       "uid" : "f2c444c1dc3cde0",
       "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/f2c444c1dc3cde0",
       "status" : "broken",
@@ -338,13 +498,23 @@
   "1a30aaf420c2497df1440669760fdbe5" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "2bcaa58c3b14636e",
+      "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/2bcaa58c3b14636e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x556d74bb2ad3 <unknown>\n#1 0x556d74912568 <unknown>\n#2 0x556d74935b37 <unknown>\n#3 0x556d7493123a <unknown>\n#4 0x556d7496c2ba <unknown>\n#5 0x556d749664e3 <unknown>\n#6 0x556d7493bd1a <unknown>\n#7 0x556d7493ce75 <unknown>\n#8 0x556d74be0efd <unknown>\n#9 0x556d74bfa19b <unknown>\n#10 0x556d74be2c65 <unknown>\n#11 0x556d74bfaec8 <unknown>\n#12 0x556d74bd6360 <unknown>\n#13 0x556d74c16a68 <unknown>\n#14 0x556d74c16be8 <unknown>\n#15 0x556d74c307fd <unknown>\n#16 0x7f942a40f609 <unknown>",
+      "time" : {
+        "start" : 1650553585216,
+        "stop" : 1650553585216,
+        "duration" : 0
+      }
+    }, {
       "uid" : "6b0ee110303c918b",
       "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/6b0ee110303c918b",
       "status" : "broken",
@@ -359,13 +529,23 @@
   "1d8ea9de05a74a2900f97e61e95a3248" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "117e83c71af9e9af",
+      "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/117e83c71af9e9af",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x556534ec5ad3 <unknown>\n#1 0x556534c25568 <unknown>\n#2 0x556534c48b37 <unknown>\n#3 0x556534c4423a <unknown>\n#4 0x556534c7f2ba <unknown>\n#5 0x556534c794e3 <unknown>\n#6 0x556534c4ed1a <unknown>\n#7 0x556534c4fe75 <unknown>\n#8 0x556534ef3efd <unknown>\n#9 0x556534f0d19b <unknown>\n#10 0x556534ef5c65 <unknown>\n#11 0x556534f0dec8 <unknown>\n#12 0x556534ee9360 <unknown>\n#13 0x556534f29a68 <unknown>\n#14 0x556534f29be8 <unknown>\n#15 0x556534f437fd <unknown>\n#16 0x7f51a15f4609 <unknown>",
+      "time" : {
+        "start" : 1650553592043,
+        "stop" : 1650553592043,
+        "duration" : 0
+      }
+    }, {
       "uid" : "ca250101d3ed7a68",
       "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/ca250101d3ed7a68",
       "status" : "broken",
@@ -380,13 +560,23 @@
   "176c0fa12fe39331a20909649fdc8e23" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 2
     },
     "items" : [ {
+      "uid" : "4dc9d0117ff6ab1",
+      "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/4dc9d0117ff6ab1",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x555764c1ead3 <unknown>\n#1 0x55576497e568 <unknown>\n#2 0x5557649a1b37 <unknown>\n#3 0x55576499d23a <unknown>\n#4 0x5557649d82ba <unknown>\n#5 0x5557649d24e3 <unknown>\n#6 0x5557649a7d1a <unknown>\n#7 0x5557649a8e75 <unknown>\n#8 0x555764c4cefd <unknown>\n#9 0x555764c6619b <unknown>\n#10 0x555764c4ec65 <unknown>\n#11 0x555764c66ec8 <unknown>\n#12 0x555764c42360 <unknown>\n#13 0x555764c82a68 <unknown>\n#14 0x555764c82be8 <unknown>\n#15 0x555764c9c7fd <unknown>\n#16 0x7ff55ddd8609 <unknown>",
+      "time" : {
+        "start" : 1650553598740,
+        "stop" : 1650553598740,
+        "duration" : 0
+      }
+    }, {
       "uid" : "2c7e8b10999c65f9",
       "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/2c7e8b10999c65f9",
       "status" : "broken",

@@ -6,7 +6,7 @@ class TestRegisterPage:
 
     def test_valid_registration(self, app):
         """
-        Регистрация.
+        Успешная регистрация.
         """
         app.register_page.open_register_page()
         data = RegisterUserModel.random()

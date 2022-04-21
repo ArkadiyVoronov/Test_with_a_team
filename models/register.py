@@ -1,12 +1,11 @@
 import random
-
-import pendulum as pendulum
 from faker import Faker
 
 fake = Faker()
 
 
 class RegisterUserModel:
+    """Генерация фейковых данных для успешной регистрации."""
     def __init__(self, user: str = None, password_1: str = None, password_2: str = None, domain: str = None):
         self.user = user
         self.password_1 = password_1

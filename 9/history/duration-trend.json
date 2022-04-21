@@ -1,3 +1,38 @@
 [ {
+  "buildOrder" : 9,
+  "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/9/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 14938
+  }
+}, {
+  "buildOrder" : 8,
+  "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/8/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 14677
+  }
+}, {
+  "buildOrder" : 7,
+  "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/7/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 18949
+  }
+}, {
+  "buildOrder" : 6,
+  "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 15927
+  }
+}, {
+  "buildOrder" : 4,
+  "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 15488
+  }
+}, {
   "data" : { }
 } ]

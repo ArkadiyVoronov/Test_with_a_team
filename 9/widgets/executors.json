@@ -1,1 +1,10 @@
-[ ]
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://ArkadiyVoronov.github.io/Test_with_a_team",
+  "buildOrder" : 9,
+  "buildName" : "GitHub Actions Run #2202701257",
+  "buildUrl" : "https://github.com/ArkadiyVoronov/Test_with_a_team/actions/runs/2202701257",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/9/"
+} ]

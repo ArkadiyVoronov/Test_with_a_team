@@ -1,5 +1,288 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "test",
+    "children" : [ {
+      "name" : "test_balance_page",
+      "children" : [ {
+        "name" : "TestBalancePage",
+        "children" : [ {
+          "name" : "test_balance_transfer",
+          "uid" : "fb4fe355a198104f",
+          "parentUid" : "309678415f53659c0531a916d2af3e4d",
+          "status" : "broken",
+          "time" : {
+            "start" : 1650553999174,
+            "stop" : 1650553999174,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_empty_card_name",
+          "uid" : "311db8773c9c6e09",
+          "parentUid" : "309678415f53659c0531a916d2af3e4d",
+          "status" : "broken",
+          "time" : {
+            "start" : 1650554001155,
+            "stop" : 1650554001155,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_empty_card_number",
+          "uid" : "38764be94a168029",
+          "parentUid" : "309678415f53659c0531a916d2af3e4d",
+          "status" : "broken",
+          "time" : {
+            "start" : 1650554001906,
+            "stop" : 1650554001906,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_empty_card_date",
+          "uid" : "c36f8a8c47d2b4c2",
+          "parentUid" : "309678415f53659c0531a916d2af3e4d",
+          "status" : "broken",
+          "time" : {
+            "start" : 1650554002673,
+            "stop" : 1650554002673,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_empty_money",
+          "uid" : "587d88630017abbb",
+          "parentUid" : "309678415f53659c0531a916d2af3e4d",
+          "status" : "broken",
+          "time" : {
+            "start" : 1650554003422,
+            "stop" : 1650554003422,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_empty_checkbox",
+          "uid" : "6492b606b2325b84",
+          "parentUid" : "309678415f53659c0531a916d2af3e4d",
+          "status" : "broken",
+          "time" : {
+            "start" : 1650554004169,
+            "stop" : 1650554004169,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "309678415f53659c0531a916d2af3e4d"
+      } ],
+      "uid" : "f1319abee6817bb95d5bf315b39c822c"
+    }, {
+      "name" : "test_login_page",
+      "children" : [ {
+        "name" : "TestLoginPage",
+        "children" : [ {
+          "name" : "test_successful_login",
+          "uid" : "629bd10c4ec8aaa4",
+          "parentUid" : "0e6e7550abea2d2de25a4567473d4c51",
+          "status" : "broken",
+          "time" : {
+            "start" : 1650554004919,
+            "stop" : 1650554004919,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_login_with_invalid_password",
+          "uid" : "db60cc14fb378bb5",
+          "parentUid" : "0e6e7550abea2d2de25a4567473d4c51",
+          "status" : "broken",
+          "time" : {
+            "start" : 1650554006127,
+            "stop" : 1650554006127,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_login_with_empty_password",
+          "uid" : "201781fad686d5ac",
+          "parentUid" : "0e6e7550abea2d2de25a4567473d4c51",
+          "status" : "broken",
+          "time" : {
+            "start" : 1650554006874,
+            "stop" : 1650554006874,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_login_with_invalid_user",
+          "uid" : "3c8ffa45f597e43d",
+          "parentUid" : "0e6e7550abea2d2de25a4567473d4c51",
+          "status" : "broken",
+          "time" : {
+            "start" : 1650554007628,
+            "stop" : 1650554007628,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_non_existent_user",
+          "uid" : "7e1226991a9e2700",
+          "parentUid" : "0e6e7550abea2d2de25a4567473d4c51",
+          "status" : "broken",
+          "time" : {
+            "start" : 1650554008395,
+            "stop" : 1650554008395,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "0e6e7550abea2d2de25a4567473d4c51"
+      } ],
+      "uid" : "cfd4b50e35f5dfe4061188f7d3bb143d"
+    }, {
+      "name" : "test_main_page",
+      "children" : [ {
+        "name" : "TestMainPage",
+        "children" : [ {
+          "name" : "test_add_product_to_basket",
+          "uid" : "575f341790247a7d",
+          "parentUid" : "9842c9c593c9e29641f0d570a73cad46",
+          "status" : "broken",
+          "time" : {
+            "start" : 1650554009162,
+            "stop" : 1650554009162,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_buy_empty_basket",
+          "uid" : "c557b12e372154ca",
+          "parentUid" : "9842c9c593c9e29641f0d570a73cad46",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1650554009913,
+            "stop" : 1650554009913,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_error_small_balance",
+          "uid" : "5e982453ef6fb951",
+          "parentUid" : "9842c9c593c9e29641f0d570a73cad46",
+          "status" : "broken",
+          "time" : {
+            "start" : 1650554009915,
+            "stop" : 1650554009915,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_success_shopping",
+          "uid" : "fdc82349d93d87a3",
+          "parentUid" : "9842c9c593c9e29641f0d570a73cad46",
+          "status" : "broken",
+          "time" : {
+            "start" : 1650554011109,
+            "stop" : 1650554011109,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "9842c9c593c9e29641f0d570a73cad46"
+      } ],
+      "uid" : "73a62e53a6b92cbf5493c0e0a130bd32"
+    }, {
+      "name" : "test_register_page",
+      "children" : [ {
+        "name" : "TestRegisterPage",
+        "children" : [ {
+          "name" : "test_valid_registration",
+          "uid" : "1980e622de305fc2",
+          "parentUid" : "6fadfd640efe6b5627f4e1cbaffafd79",
+          "status" : "broken",
+          "time" : {
+            "start" : 1650554011856,
+            "stop" : 1650554011856,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_invalid_email_registration",
+          "uid" : "a5a26df467e135b7",
+          "parentUid" : "6fadfd640efe6b5627f4e1cbaffafd79",
+          "status" : "broken",
+          "time" : {
+            "start" : 1650554012600,
+            "stop" : 1650554012600,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_invalid_password_registration",
+          "uid" : "a5bbbd1fc3284ee",
+          "parentUid" : "6fadfd640efe6b5627f4e1cbaffafd79",
+          "status" : "broken",
+          "time" : {
+            "start" : 1650554013345,
+            "stop" : 1650554013345,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_short_password_registration",
+          "uid" : "3bb22a458b949be0",
+          "parentUid" : "6fadfd640efe6b5627f4e1cbaffafd79",
+          "status" : "broken",
+          "time" : {
+            "start" : 1650554014112,
+            "stop" : 1650554014112,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "6fadfd640efe6b5627f4e1cbaffafd79"
+      } ],
+      "uid" : "99edaf2688ac5ca7896fc32b419e670c"
+    } ],
+    "uid" : "ff2b04dbb9c449a4d40723f51d841925"
+  } ],
   "name" : "suites"
 }

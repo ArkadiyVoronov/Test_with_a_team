@@ -19,7 +19,8 @@ def pytest_addoption(parser):
         help="products store",
     ),
     parser.addoption("--headless", action="store_true", help="Headless mode"),
-    parser.addoption("--api_url", action="store", default="https://stores-tests-api.herokuapp.com/register",
+    parser.addoption("--api_url", action="store",
+                     default="https://stores-tests-api.herokuapp.com/register",
                      help="store API"),
 
 
@@ -57,7 +58,8 @@ def register_user(request) -> RegisterUserModel:
 def login_user(app, register_user):
     """Фикстура авторизации пользователя."""
     app.login_page.open_login_page()
-    app.login_page.entry_data_login(register_user.user, register_user.password_1)
+    app.login_page.entry_data_login(register_user.user,
+                                    register_user.password_1)
     app.login_page.wait_notice()
 
 

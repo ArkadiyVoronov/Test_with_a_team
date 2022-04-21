@@ -1,5 +1,315 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x559a4fc6dad3 <unknown>\n#1 0x559a4f9cd568 <unknown>\n#2 0x559a4f9f0b37 <unknown>\n#3 0x559a4f9ec23a <unknown>\n#4 0x559a4fa272ba <unknown>\n#5 0x559a4fa214e3 <unknown>\n#6 0x559a4f9f6d1a <unknown>\n#7 0x559a4f9f7e75 <unknown>\n#8 0x559a4fc9befd <unknown>\n#9 0x559a4fcb519b <unknown>\n#10 0x559a4fc9dc65 <unknown>\n#11 0x559a4fcb5ec8 <unknown>\n#12 0x559a4fc91360 <unknown>\n#13 0x559a4fcd1a68 <unknown>\n#14 0x559a4fcd1be8 <unknown>\n#15 0x559a4fceb7fd <unknown>\n#16 0x7f7cfb28f609 <unknown>",
+      "children" : [ {
+        "name" : "test_balance_transfer",
+        "uid" : "19cab0ba1d4c6de",
+        "parentUid" : "3640a37da55b44e5c0e82b20f401ce68",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650553922408,
+          "stop" : 1650553922408,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3640a37da55b44e5c0e82b20f401ce68"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x56433a9dcad3 <unknown>\n#1 0x56433a73c568 <unknown>\n#2 0x56433a75fb37 <unknown>\n#3 0x56433a75b23a <unknown>\n#4 0x56433a7962ba <unknown>\n#5 0x56433a7904e3 <unknown>\n#6 0x56433a765d1a <unknown>\n#7 0x56433a766e75 <unknown>\n#8 0x56433aa0aefd <unknown>\n#9 0x56433aa2419b <unknown>\n#10 0x56433aa0cc65 <unknown>\n#11 0x56433aa24ec8 <unknown>\n#12 0x56433aa00360 <unknown>\n#13 0x56433aa40a68 <unknown>\n#14 0x56433aa40be8 <unknown>\n#15 0x56433aa5a7fd <unknown>\n#16 0x7fa065b71609 <unknown>",
+      "children" : [ {
+        "name" : "test_empty_card_name",
+        "uid" : "20580c48cf878cee",
+        "parentUid" : "4f44be23235d975d4f02bf855acf09c0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650553924360,
+          "stop" : 1650553924360,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4f44be23235d975d4f02bf855acf09c0"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x558827cfbad3 <unknown>\n#1 0x558827a5b568 <unknown>\n#2 0x558827a7eb37 <unknown>\n#3 0x558827a7a23a <unknown>\n#4 0x558827ab52ba <unknown>\n#5 0x558827aaf4e3 <unknown>\n#6 0x558827a84d1a <unknown>\n#7 0x558827a85e75 <unknown>\n#8 0x558827d29efd <unknown>\n#9 0x558827d4319b <unknown>\n#10 0x558827d2bc65 <unknown>\n#11 0x558827d43ec8 <unknown>\n#12 0x558827d1f360 <unknown>\n#13 0x558827d5fa68 <unknown>\n#14 0x558827d5fbe8 <unknown>\n#15 0x558827d797fd <unknown>\n#16 0x7fae5233f609 <unknown>",
+      "children" : [ {
+        "name" : "test_empty_card_number",
+        "uid" : "6cae661f6e5eee3c",
+        "parentUid" : "d21b739054a702db5acfac347767820d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650553925107,
+          "stop" : 1650553925107,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d21b739054a702db5acfac347767820d"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x56105f3e2ad3 <unknown>\n#1 0x56105f142568 <unknown>\n#2 0x56105f165b37 <unknown>\n#3 0x56105f16123a <unknown>\n#4 0x56105f19c2ba <unknown>\n#5 0x56105f1964e3 <unknown>\n#6 0x56105f16bd1a <unknown>\n#7 0x56105f16ce75 <unknown>\n#8 0x56105f410efd <unknown>\n#9 0x56105f42a19b <unknown>\n#10 0x56105f412c65 <unknown>\n#11 0x56105f42aec8 <unknown>\n#12 0x56105f406360 <unknown>\n#13 0x56105f446a68 <unknown>\n#14 0x56105f446be8 <unknown>\n#15 0x56105f4607fd <unknown>\n#16 0x7f3e3cdaf609 <unknown>",
+      "children" : [ {
+        "name" : "test_empty_card_date",
+        "uid" : "1577b0717d91d1d7",
+        "parentUid" : "7c33c545c1770db2bdb57f06a61d3707",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650553925880,
+          "stop" : 1650553925880,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7c33c545c1770db2bdb57f06a61d3707"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5574e7bdbad3 <unknown>\n#1 0x5574e793b568 <unknown>\n#2 0x5574e795eb37 <unknown>\n#3 0x5574e795a23a <unknown>\n#4 0x5574e79952ba <unknown>\n#5 0x5574e798f4e3 <unknown>\n#6 0x5574e7964d1a <unknown>\n#7 0x5574e7965e75 <unknown>\n#8 0x5574e7c09efd <unknown>\n#9 0x5574e7c2319b <unknown>\n#10 0x5574e7c0bc65 <unknown>\n#11 0x5574e7c23ec8 <unknown>\n#12 0x5574e7bff360 <unknown>\n#13 0x5574e7c3fa68 <unknown>\n#14 0x5574e7c3fbe8 <unknown>\n#15 0x5574e7c597fd <unknown>\n#16 0x7fd46da7b609 <unknown>",
+      "children" : [ {
+        "name" : "test_empty_money",
+        "uid" : "baabde78f8434fb2",
+        "parentUid" : "43131304ff543a80462588c0b00d0e7b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650553926646,
+          "stop" : 1650553926646,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "43131304ff543a80462588c0b00d0e7b"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5563f3e6fad3 <unknown>\n#1 0x5563f3bcf568 <unknown>\n#2 0x5563f3bf2b37 <unknown>\n#3 0x5563f3bee23a <unknown>\n#4 0x5563f3c292ba <unknown>\n#5 0x5563f3c234e3 <unknown>\n#6 0x5563f3bf8d1a <unknown>\n#7 0x5563f3bf9e75 <unknown>\n#8 0x5563f3e9defd <unknown>\n#9 0x5563f3eb719b <unknown>\n#10 0x5563f3e9fc65 <unknown>\n#11 0x5563f3eb7ec8 <unknown>\n#12 0x5563f3e93360 <unknown>\n#13 0x5563f3ed3a68 <unknown>\n#14 0x5563f3ed3be8 <unknown>\n#15 0x5563f3eed7fd <unknown>\n#16 0x7f39fc8c2609 <unknown>",
+      "children" : [ {
+        "name" : "test_empty_checkbox",
+        "uid" : "786145ee7be029aa",
+        "parentUid" : "a3e53326abddf8dd47ee1a521782ccb1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650553927401,
+          "stop" : 1650553927401,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a3e53326abddf8dd47ee1a521782ccb1"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x558a8c09aad3 <unknown>\n#1 0x558a8bdfa568 <unknown>\n#2 0x558a8be1db37 <unknown>\n#3 0x558a8be1923a <unknown>\n#4 0x558a8be542ba <unknown>\n#5 0x558a8be4e4e3 <unknown>\n#6 0x558a8be23d1a <unknown>\n#7 0x558a8be24e75 <unknown>\n#8 0x558a8c0c8efd <unknown>\n#9 0x558a8c0e219b <unknown>\n#10 0x558a8c0cac65 <unknown>\n#11 0x558a8c0e2ec8 <unknown>\n#12 0x558a8c0be360 <unknown>\n#13 0x558a8c0fea68 <unknown>\n#14 0x558a8c0febe8 <unknown>\n#15 0x558a8c1187fd <unknown>\n#16 0x7f9cf16a6609 <unknown>",
+      "children" : [ {
+        "name" : "test_successful_login",
+        "uid" : "820ab34a63769e10",
+        "parentUid" : "e78f2c21f62d35f6cfc2c95c1214c8ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650553928147,
+          "stop" : 1650553928147,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e78f2c21f62d35f6cfc2c95c1214c8ca"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x557d6852aad3 <unknown>\n#1 0x557d6828a568 <unknown>\n#2 0x557d682adb37 <unknown>\n#3 0x557d682a923a <unknown>\n#4 0x557d682e42ba <unknown>\n#5 0x557d682de4e3 <unknown>\n#6 0x557d682b3d1a <unknown>\n#7 0x557d682b4e75 <unknown>\n#8 0x557d68558efd <unknown>\n#9 0x557d6857219b <unknown>\n#10 0x557d6855ac65 <unknown>\n#11 0x557d68572ec8 <unknown>\n#12 0x557d6854e360 <unknown>\n#13 0x557d6858ea68 <unknown>\n#14 0x557d6858ebe8 <unknown>\n#15 0x557d685a87fd <unknown>\n#16 0x7fc529886609 <unknown>",
+      "children" : [ {
+        "name" : "test_login_with_invalid_password",
+        "uid" : "4f2fedf9be23826c",
+        "parentUid" : "94a0dc97385bc622c47d79f7ebca94f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650553929213,
+          "stop" : 1650553929213,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "94a0dc97385bc622c47d79f7ebca94f6"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x56139078aad3 <unknown>\n#1 0x5613904ea568 <unknown>\n#2 0x56139050db37 <unknown>\n#3 0x56139050923a <unknown>\n#4 0x5613905442ba <unknown>\n#5 0x56139053e4e3 <unknown>\n#6 0x561390513d1a <unknown>\n#7 0x561390514e75 <unknown>\n#8 0x5613907b8efd <unknown>\n#9 0x5613907d219b <unknown>\n#10 0x5613907bac65 <unknown>\n#11 0x5613907d2ec8 <unknown>\n#12 0x5613907ae360 <unknown>\n#13 0x5613907eea68 <unknown>\n#14 0x5613907eebe8 <unknown>\n#15 0x5613908087fd <unknown>\n#16 0x7fdbe4509609 <unknown>",
+      "children" : [ {
+        "name" : "test_login_with_empty_password",
+        "uid" : "248a78ec624a4f36",
+        "parentUid" : "52ce0ecdf6ddecf0095592e4cf36f789",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650553929970,
+          "stop" : 1650553929970,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "52ce0ecdf6ddecf0095592e4cf36f789"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5565cb964ad3 <unknown>\n#1 0x5565cb6c4568 <unknown>\n#2 0x5565cb6e7b37 <unknown>\n#3 0x5565cb6e323a <unknown>\n#4 0x5565cb71e2ba <unknown>\n#5 0x5565cb7184e3 <unknown>\n#6 0x5565cb6edd1a <unknown>\n#7 0x5565cb6eee75 <unknown>\n#8 0x5565cb992efd <unknown>\n#9 0x5565cb9ac19b <unknown>\n#10 0x5565cb994c65 <unknown>\n#11 0x5565cb9acec8 <unknown>\n#12 0x5565cb988360 <unknown>\n#13 0x5565cb9c8a68 <unknown>\n#14 0x5565cb9c8be8 <unknown>\n#15 0x5565cb9e27fd <unknown>\n#16 0x7fb3e1169609 <unknown>",
+      "children" : [ {
+        "name" : "test_login_with_invalid_user",
+        "uid" : "d68ce6df3ecaf404",
+        "parentUid" : "31765cc0e04c06821661f697c753b979",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650553930718,
+          "stop" : 1650553930718,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "31765cc0e04c06821661f697c753b979"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5650427e6ad3 <unknown>\n#1 0x565042546568 <unknown>\n#2 0x565042569b37 <unknown>\n#3 0x56504256523a <unknown>\n#4 0x5650425a02ba <unknown>\n#5 0x56504259a4e3 <unknown>\n#6 0x56504256fd1a <unknown>\n#7 0x565042570e75 <unknown>\n#8 0x565042814efd <unknown>\n#9 0x56504282e19b <unknown>\n#10 0x565042816c65 <unknown>\n#11 0x56504282eec8 <unknown>\n#12 0x56504280a360 <unknown>\n#13 0x56504284aa68 <unknown>\n#14 0x56504284abe8 <unknown>\n#15 0x5650428647fd <unknown>\n#16 0x7f4283b05609 <unknown>",
+      "children" : [ {
+        "name" : "test_non_existent_user",
+        "uid" : "6c53877b1e4f83f5",
+        "parentUid" : "77f8c438a5d2d60c517a9488f568e5a1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650553931482,
+          "stop" : 1650553931482,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "77f8c438a5d2d60c517a9488f568e5a1"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55b971bbead3 <unknown>\n#1 0x55b97191e568 <unknown>\n#2 0x55b971941b37 <unknown>\n#3 0x55b97193d23a <unknown>\n#4 0x55b9719782ba <unknown>\n#5 0x55b9719724e3 <unknown>\n#6 0x55b971947d1a <unknown>\n#7 0x55b971948e75 <unknown>\n#8 0x55b971becefd <unknown>\n#9 0x55b971c0619b <unknown>\n#10 0x55b971beec65 <unknown>\n#11 0x55b971c06ec8 <unknown>\n#12 0x55b971be2360 <unknown>\n#13 0x55b971c22a68 <unknown>\n#14 0x55b971c22be8 <unknown>\n#15 0x55b971c3c7fd <unknown>\n#16 0x7fbd8f485609 <unknown>",
+      "children" : [ {
+        "name" : "test_add_product_to_basket",
+        "uid" : "3a23184b05edd953",
+        "parentUid" : "8bd819dd0a143877eeed2fe2979f4326",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650553932227,
+          "stop" : 1650553932227,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8bd819dd0a143877eeed2fe2979f4326"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5596dc782ad3 <unknown>\n#1 0x5596dc4e2568 <unknown>\n#2 0x5596dc505b37 <unknown>\n#3 0x5596dc50123a <unknown>\n#4 0x5596dc53c2ba <unknown>\n#5 0x5596dc5364e3 <unknown>\n#6 0x5596dc50bd1a <unknown>\n#7 0x5596dc50ce75 <unknown>\n#8 0x5596dc7b0efd <unknown>\n#9 0x5596dc7ca19b <unknown>\n#10 0x5596dc7b2c65 <unknown>\n#11 0x5596dc7caec8 <unknown>\n#12 0x5596dc7a6360 <unknown>\n#13 0x5596dc7e6a68 <unknown>\n#14 0x5596dc7e6be8 <unknown>\n#15 0x5596dc8007fd <unknown>\n#16 0x7f76b506e609 <unknown>",
+      "children" : [ {
+        "name" : "test_error_small_balance",
+        "uid" : "b58d1906bdb6c903",
+        "parentUid" : "88cb61815ba6ada6944293065cbc5dc6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650553932979,
+          "stop" : 1650553932979,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "88cb61815ba6ada6944293065cbc5dc6"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55cca1b91ad3 <unknown>\n#1 0x55cca18f1568 <unknown>\n#2 0x55cca1914b37 <unknown>\n#3 0x55cca191023a <unknown>\n#4 0x55cca194b2ba <unknown>\n#5 0x55cca19454e3 <unknown>\n#6 0x55cca191ad1a <unknown>\n#7 0x55cca191be75 <unknown>\n#8 0x55cca1bbfefd <unknown>\n#9 0x55cca1bd919b <unknown>\n#10 0x55cca1bc1c65 <unknown>\n#11 0x55cca1bd9ec8 <unknown>\n#12 0x55cca1bb5360 <unknown>\n#13 0x55cca1bf5a68 <unknown>\n#14 0x55cca1bf5be8 <unknown>\n#15 0x55cca1c0f7fd <unknown>\n#16 0x7efd8e21b609 <unknown>",
+      "children" : [ {
+        "name" : "test_success_shopping",
+        "uid" : "d1840442f79675f3",
+        "parentUid" : "e8b6574a8e502931feba864e41559d33",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650553934048,
+          "stop" : 1650553934048,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e8b6574a8e502931feba864e41559d33"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55ab6a814ad3 <unknown>\n#1 0x55ab6a574568 <unknown>\n#2 0x55ab6a597b37 <unknown>\n#3 0x55ab6a59323a <unknown>\n#4 0x55ab6a5ce2ba <unknown>\n#5 0x55ab6a5c84e3 <unknown>\n#6 0x55ab6a59dd1a <unknown>\n#7 0x55ab6a59ee75 <unknown>\n#8 0x55ab6a842efd <unknown>\n#9 0x55ab6a85c19b <unknown>\n#10 0x55ab6a844c65 <unknown>\n#11 0x55ab6a85cec8 <unknown>\n#12 0x55ab6a838360 <unknown>\n#13 0x55ab6a878a68 <unknown>\n#14 0x55ab6a878be8 <unknown>\n#15 0x55ab6a8927fd <unknown>\n#16 0x7f069e1dc609 <unknown>",
+      "children" : [ {
+        "name" : "test_valid_registration",
+        "uid" : "19374bd1c384f114",
+        "parentUid" : "3836023d53edda0a9eacb5f4bd2ab42f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650553934804,
+          "stop" : 1650553934804,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3836023d53edda0a9eacb5f4bd2ab42f"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55dde3fd6ad3 <unknown>\n#1 0x55dde3d36568 <unknown>\n#2 0x55dde3d59b37 <unknown>\n#3 0x55dde3d5523a <unknown>\n#4 0x55dde3d902ba <unknown>\n#5 0x55dde3d8a4e3 <unknown>\n#6 0x55dde3d5fd1a <unknown>\n#7 0x55dde3d60e75 <unknown>\n#8 0x55dde4004efd <unknown>\n#9 0x55dde401e19b <unknown>\n#10 0x55dde4006c65 <unknown>\n#11 0x55dde401eec8 <unknown>\n#12 0x55dde3ffa360 <unknown>\n#13 0x55dde403aa68 <unknown>\n#14 0x55dde403abe8 <unknown>\n#15 0x55dde40547fd <unknown>\n#16 0x7f72f9f94609 <unknown>",
+      "children" : [ {
+        "name" : "test_invalid_email_registration",
+        "uid" : "7271b44914f9db39",
+        "parentUid" : "1cf42e75a9c7bf617817067d142c4158",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650553935564,
+          "stop" : 1650553935564,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1cf42e75a9c7bf617817067d142c4158"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x562f84b4ead3 <unknown>\n#1 0x562f848ae568 <unknown>\n#2 0x562f848d1b37 <unknown>\n#3 0x562f848cd23a <unknown>\n#4 0x562f849082ba <unknown>\n#5 0x562f849024e3 <unknown>\n#6 0x562f848d7d1a <unknown>\n#7 0x562f848d8e75 <unknown>\n#8 0x562f84b7cefd <unknown>\n#9 0x562f84b9619b <unknown>\n#10 0x562f84b7ec65 <unknown>\n#11 0x562f84b96ec8 <unknown>\n#12 0x562f84b72360 <unknown>\n#13 0x562f84bb2a68 <unknown>\n#14 0x562f84bb2be8 <unknown>\n#15 0x562f84bcc7fd <unknown>\n#16 0x7f99c7d07609 <unknown>",
+      "children" : [ {
+        "name" : "test_invalid_password_registration",
+        "uid" : "f33b03ee0c3ebb77",
+        "parentUid" : "332d3cb4bb864643bf361f997ebf13ec",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650553936313,
+          "stop" : 1650553936313,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "332d3cb4bb864643bf361f997ebf13ec"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55710e831ad3 <unknown>\n#1 0x55710e591568 <unknown>\n#2 0x55710e5b4b37 <unknown>\n#3 0x55710e5b023a <unknown>\n#4 0x55710e5eb2ba <unknown>\n#5 0x55710e5e54e3 <unknown>\n#6 0x55710e5bad1a <unknown>\n#7 0x55710e5bbe75 <unknown>\n#8 0x55710e85fefd <unknown>\n#9 0x55710e87919b <unknown>\n#10 0x55710e861c65 <unknown>\n#11 0x55710e879ec8 <unknown>\n#12 0x55710e855360 <unknown>\n#13 0x55710e895a68 <unknown>\n#14 0x55710e895be8 <unknown>\n#15 0x55710e8af7fd <unknown>\n#16 0x7fb465537609 <unknown>",
+      "children" : [ {
+        "name" : "test_short_password_registration",
+        "uid" : "704837b33e44827c",
+        "parentUid" : "e1a3dabfe48c0b1446375b19a1cdce7b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650553937085,
+          "stop" : 1650553937085,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e1a3dabfe48c0b1446375b19a1cdce7b"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
   "name" : "categories"
 }

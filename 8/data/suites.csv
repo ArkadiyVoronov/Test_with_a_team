@@ -1,0 +1,56 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Thu Apr 21 15:12:09 GMT 2022","Thu Apr 21 15:12:09 GMT 2022","0","test","test_login_page","TestLoginPage","","","test_login_with_empty_password","
+        Попытка авторизации с незаполненым паролем.
+        "
+"broken","Thu Apr 21 15:12:11 GMT 2022","Thu Apr 21 15:12:11 GMT 2022","0","test","test_login_page","TestLoginPage","","","test_non_existent_user","
+        Попытка авторизации незарегистированного пользователя.
+        "
+"broken","Thu Apr 21 15:12:14 GMT 2022","Thu Apr 21 15:12:14 GMT 2022","0","test","test_main_page","TestMainPage","","","test_success_shopping","Успешная покупка"
+"broken","Thu Apr 21 15:12:06 GMT 2022","Thu Apr 21 15:12:06 GMT 2022","0","test","test_balance_page","TestBalancePage","","","test_empty_money","
+        Пополнение баланса без заполнения суммы.
+        "
+"broken","Thu Apr 21 15:12:17 GMT 2022","Thu Apr 21 15:12:17 GMT 2022","0","test","test_register_page","TestRegisterPage","","","test_short_password_registration","
+        Регистрация с паролем < 7 симвлов.
+        "
+"broken","Thu Apr 21 15:12:02 GMT 2022","Thu Apr 21 15:12:02 GMT 2022","0","test","test_balance_page","TestBalancePage","","","test_balance_transfer","
+        Пополнение баланса.
+        "
+"broken","Thu Apr 21 15:12:15 GMT 2022","Thu Apr 21 15:12:15 GMT 2022","0","test","test_register_page","TestRegisterPage","","","test_invalid_email_registration","
+        Регистрация с невалидным email.
+        "
+"broken","Thu Apr 21 15:12:05 GMT 2022","Thu Apr 21 15:12:05 GMT 2022","0","test","test_balance_page","TestBalancePage","","","test_empty_card_number","
+        Пополнение баланса без заполнения номера карты.
+        "
+"broken","Thu Apr 21 15:12:14 GMT 2022","Thu Apr 21 15:12:14 GMT 2022","0","test","test_register_page","TestRegisterPage","","","test_valid_registration","
+        Успешная регистрация.
+        "
+"broken","Thu Apr 21 15:12:12 GMT 2022","Thu Apr 21 15:12:12 GMT 2022","0","test","test_main_page","TestMainPage","","","test_add_product_to_basket","
+        Открываем главную страницу и проверяем, что карточки продуктов доступны для добавления в корзину.
+        "
+"broken","Thu Apr 21 15:12:12 GMT 2022","Thu Apr 21 15:12:12 GMT 2022","0","test","test_main_page","TestMainPage","","","test_error_small_balance","
+        Попытка купить, если недостаточный баланс.
+        "
+"broken","Thu Apr 21 15:12:05 GMT 2022","Thu Apr 21 15:12:05 GMT 2022","0","test","test_balance_page","TestBalancePage","","","test_empty_card_date","
+        Пополнение баланса без заполнения даты действия карты.
+        "
+"broken","Thu Apr 21 15:12:04 GMT 2022","Thu Apr 21 15:12:04 GMT 2022","0","test","test_balance_page","TestBalancePage","","","test_empty_card_name","
+        Пополнение баланса без заполнения имени держателя карты.
+        "
+"skipped","Thu Apr 21 15:12:12 GMT 2022","Thu Apr 21 15:12:12 GMT 2022","0","test","test_main_page","TestMainPage","","","test_buy_empty_basket","
+        Попытка купить, если корзина пуста.
+        "
+"broken","Thu Apr 21 15:12:10 GMT 2022","Thu Apr 21 15:12:10 GMT 2022","0","test","test_login_page","TestLoginPage","","","test_login_with_invalid_user","
+        Попытка авторизации с ошибкой в поле Email.
+        "
+"broken","Thu Apr 21 15:12:16 GMT 2022","Thu Apr 21 15:12:16 GMT 2022","0","test","test_register_page","TestRegisterPage","","","test_invalid_password_registration","
+        Регистрация с разными паролями.
+        "
+"broken","Thu Apr 21 15:12:09 GMT 2022","Thu Apr 21 15:12:09 GMT 2022","0","test","test_login_page","TestLoginPage","","","test_login_with_invalid_password","
+        Попытка авторизации с невалидным паролем.
+        "
+"broken","Thu Apr 21 15:12:08 GMT 2022","Thu Apr 21 15:12:08 GMT 2022","0","test","test_login_page","TestLoginPage","","","test_successful_login","
+        Успешная авторизация пользователя.
+        "
+"broken","Thu Apr 21 15:12:07 GMT 2022","Thu Apr 21 15:12:07 GMT 2022","0","test","test_balance_page","TestBalancePage","","","test_empty_checkbox","
+        Пополнение баланса без принятия правил(чекбокс).
+        "

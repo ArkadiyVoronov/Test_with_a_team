@@ -1,9 +1,9 @@
-# Автотесты для сайта https://berpress.github.io/react-shop/
+Автотесты для сайта https://berpress.github.io/react-shop/
 
 [![Pytest Selenium Allure status](https://github.com/ArkadiyVoronov/Test_with_a_team/actions/workflows/pytest_selenium_allure.yml/badge.svg)](https://github.com/ArkadiyVoronov/Test_with_a_team/actions/workflows/pytest_selenium_allure.yml)
 
 
-# Локальный запуск
+Локальный запуск
 
 Для локального запуска необходим Python версии 3.8 и выше
 При первом запуске надо создать виртуальное окружение
@@ -31,15 +31,15 @@ pytest
 ```
 ---
 
-# Проверка кода организована через pre-commit
+Проверка кода организована через pre-commit
 Подробнее https://pre-commit.com/
 
 ---
 
-# CI организован через https://semgrep.dev/
+CI организован через https://semgrep.dev/
 
 ---
-# Логирование реализовано через пакет logging
+Логирование реализовано через пакет logging
 Подробнее https://docs.python.org/3/library/logging.html
 
 ---

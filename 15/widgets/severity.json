@@ -1,0 +1,191 @@
+[ {
+  "uid" : "b1df5a6fb8d6217",
+  "name" : "test_short_password_registration",
+  "time" : {
+    "start" : 1650905706837,
+    "stop" : 1650905706837,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "6ea5afcef5991896",
+  "name" : "test_valid_registration",
+  "time" : {
+    "start" : 1650905706703,
+    "stop" : 1650905706703,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "956b5b2361240637",
+  "name" : "test_login_with_invalid_user",
+  "time" : {
+    "start" : 1650905706486,
+    "stop" : 1650905706486,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "dd5affbc2768deab",
+  "name" : "test_login_with_invalid_password",
+  "time" : {
+    "start" : 1650905706406,
+    "stop" : 1650905706406,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "134d03607d6c4c75",
+  "name" : "test_empty_card_number",
+  "time" : {
+    "start" : 1650905706181,
+    "stop" : 1650905706181,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "62733da84e8b5d43",
+  "name" : "test_login_with_empty_password",
+  "time" : {
+    "start" : 1650905706446,
+    "stop" : 1650905706446,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5577da856070dc87",
+  "name" : "test_buy_empty_basket",
+  "time" : {
+    "start" : 1650905706621,
+    "stop" : 1650905706621,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "a064713f809fa49e",
+  "name" : "test_empty_card_name",
+  "time" : {
+    "start" : 1650905706139,
+    "stop" : 1650905706139,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b6df419d8c6f4389",
+  "name" : "test_success_shopping",
+  "time" : {
+    "start" : 1650905706664,
+    "stop" : 1650905706664,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "197e6710d4ca11ec",
+  "name" : "test_empty_card_date",
+  "time" : {
+    "start" : 1650905706244,
+    "stop" : 1650905706244,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "3e80ae5b5d8bb678",
+  "name" : "test_error_small_balance",
+  "time" : {
+    "start" : 1650905706623,
+    "stop" : 1650905706623,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5a9a90104873da8e",
+  "name" : "test_empty_money",
+  "time" : {
+    "start" : 1650905706285,
+    "stop" : 1650905706285,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "6719f4e969544870",
+  "name" : "test_empty_checkbox",
+  "time" : {
+    "start" : 1650905706324,
+    "stop" : 1650905706324,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "d02bdb2317091370",
+  "name" : "test_invalid_password_registration",
+  "time" : {
+    "start" : 1650905706783,
+    "stop" : 1650905706783,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "a89c5eb92706cd28",
+  "name" : "test_successful_login",
+  "time" : {
+    "start" : 1650905706366,
+    "stop" : 1650905706366,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "8416cbb4f19a86f9",
+  "name" : "test_add_product_to_basket",
+  "time" : {
+    "start" : 1650905706581,
+    "stop" : 1650905706581,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b17387eccb8e8843",
+  "name" : "test_invalid_email_registration",
+  "time" : {
+    "start" : 1650905706743,
+    "stop" : 1650905706743,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "9f243a484c766222",
+  "name" : "test_non_existent_user",
+  "time" : {
+    "start" : 1650905706540,
+    "stop" : 1650905706540,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "ba641da0e31d55cf",
+  "name" : "test_balance_transfer",
+  "time" : {
+    "start" : 1650905704551,
+    "stop" : 1650905704551,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

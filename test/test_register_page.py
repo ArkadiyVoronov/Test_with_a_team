@@ -1,5 +1,6 @@
 from fixtures.constants import Notice
 from models.register import RegisterUserModel
+import allure
 
 @allure.story('Test register')
 class TestRegisterPage:

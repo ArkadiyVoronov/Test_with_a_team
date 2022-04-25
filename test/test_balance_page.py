@@ -1,4 +1,5 @@
 import time
+import allure
 from fixtures.constants import Notice
 from models.balance import BalanceUserModel
 

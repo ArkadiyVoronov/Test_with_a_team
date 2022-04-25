@@ -1,0 +1,213 @@
+{
+  "uid" : "94bba2c86883e080",
+  "name" : "test_login_with_invalid_password",
+  "fullName" : "test.test_login_page.TestLoginPage#test_login_with_invalid_password",
+  "historyId" : "bc6facd2d4fe631c3d78b1be68860e0e",
+  "time" : {
+    "start" : 1650903980023,
+    "stop" : 1650903980023,
+    "duration" : 0
+  },
+  "description" : "\n        Попытка авторизации с невалидным паролем.\n        ",
+  "descriptionHtml" : "<pre><code>    Попытка авторизации с невалидным паролем.\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x56198609dad3 <unknown>\n#1 0x561985dfd568 <unknown>\n#2 0x561985e20b37 <unknown>\n#3 0x561985e1c23a <unknown>\n#4 0x561985e572ba <unknown>\n#5 0x561985e514e3 <unknown>\n#6 0x561985e26d1a <unknown>\n#7 0x561985e27e75 <unknown>\n#8 0x5619860cbefd <unknown>\n#9 0x5619860e519b <unknown>\n#10 0x5619860cdc65 <unknown>\n#11 0x5619860e5ec8 <unknown>\n#12 0x5619860c1360 <unknown>\n#13 0x561986101a68 <unknown>\n#14 0x561986101be8 <unknown>\n#15 0x56198611b7fd <unknown>\n#16 0x7f6ce8838609 <unknown>",
+  "statusTrace" : "request = <SubRequest 'app' for <Function test_login_with_invalid_password>>\n\n    @pytest.fixture\n    def app(request):\n        url = request.config.getoption(\"--url\")\n        logger.info(f\"Start app on {url}\")\n        headless = request.config.getoption(\"--headless\")\n        chrome_options = Options()\n        chrome_options.add_argument(\"window-size=1800,1080\")\n        if headless:\n            chrome_options.headless = True\n        else:\n            chrome_options.headless = False\n>       driver = webdriver.Chrome(ChromeDriverManager().install(),\n                                  options=chrome_options)\n\nconftest.py:38: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../../../.local/lib/python3.8/site-packages/selenium/webdriver/chrome/webdriver.py:70: in __init__\n    super(WebDriver, self).__init__(DesiredCapabilities.CHROME['browserName'], \"goog\",\n../../../.local/lib/python3.8/site-packages/selenium/webdriver/chromium/webdriver.py:93: in __init__\n    RemoteWebDriver.__init__(\n../../../.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py:269: in __init__\n    self.start_session(capabilities, browser_profile)\n../../../.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py:360: in start_session\n    response = self.execute(Command.NEW_SESSION, parameters)\n../../../.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py:425: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7f7728cb3520>\nresponse = {'status': 500, 'value': '{\"value\":{\"error\":\"unknown error\",\"message\":\"unknown error: Chrome failed to start: exited a...\\\\n#14 0x561986101be8 \\\\u003Cunknown>\\\\n#15 0x56198611b7fd \\\\u003Cunknown>\\\\n#16 0x7f6ce8838609 \\\\u003Cunknown>\\\\n\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, str):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:\n            exception_class = NoSuchShadowRootException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if not value:\n            value = response['value']\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None  # type: ignore[assignment]\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        st_value = value.get('stackTrace') or value.get('stacktrace')\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split('\\n')\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = self._value_or_default(frame, 'lineNumber', '')\n                        file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                        if line:\n                            file = \"%s:%s\" % (file, line)\n                        meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                        if 'className' in frame:\n                            meth = \"%s.%s\" % (frame['className'], meth)\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\nE         (unknown error: DevToolsActivePort file doesn't exist)\nE         (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nE       Stacktrace:\nE       #0 0x56198609dad3 <unknown>\nE       #1 0x561985dfd568 <unknown>\nE       #2 0x561985e20b37 <unknown>\nE       #3 0x561985e1c23a <unknown>\nE       #4 0x561985e572ba <unknown>\nE       #5 0x561985e514e3 <unknown>\nE       #6 0x561985e26d1a <unknown>\nE       #7 0x561985e27e75 <unknown>\nE       #8 0x5619860cbefd <unknown>\nE       #9 0x5619860e519b <unknown>\nE       #10 0x5619860cdc65 <unknown>\nE       #11 0x5619860e5ec8 <unknown>\nE       #12 0x5619860c1360 <unknown>\nE       #13 0x561986101a68 <unknown>\nE       #14 0x561986101be8 <unknown>\nE       #15 0x56198611b7fd <unknown>\nE       #16 0x7f6ce8838609 <unknown>\n\n../../../.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py:247: WebDriverException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1650903973024,
+      "stop" : 1650903973036,
+      "duration" : 12
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "register_user",
+    "time" : {
+      "start" : 1650903978811,
+      "stop" : 1650903979280,
+      "duration" : 469
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1650903980023,
+      "stop" : 1650903980720,
+      "duration" : 697
+    },
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x56198609dad3 <unknown>\n#1 0x561985dfd568 <unknown>\n#2 0x561985e20b37 <unknown>\n#3 0x561985e1c23a <unknown>\n#4 0x561985e572ba <unknown>\n#5 0x561985e514e3 <unknown>\n#6 0x561985e26d1a <unknown>\n#7 0x561985e27e75 <unknown>\n#8 0x5619860cbefd <unknown>\n#9 0x5619860e519b <unknown>\n#10 0x5619860cdc65 <unknown>\n#11 0x5619860e5ec8 <unknown>\n#12 0x5619860c1360 <unknown>\n#13 0x561986101a68 <unknown>\n#14 0x561986101be8 <unknown>\n#15 0x56198611b7fd <unknown>\n#16 0x7f6ce8838609 <unknown>\n\n",
+    "statusTrace" : "  File \"/home/runner/.local/lib/python3.8/site-packages/pluggy/_callers.py\", line 39, in _multicall\n    res = hook_impl.function(*args)\n  File \"/home/runner/.local/lib/python3.8/site-packages/_pytest/fixtures.py\", line 1122, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"/home/runner/.local/lib/python3.8/site-packages/_pytest/fixtures.py\", line 917, in call_fixture_func\n    fixture_result = next(generator)\n  File \"/home/runner/work/Test_with_a_team/Test_with_a_team/conftest.py\", line 38, in app\n    driver = webdriver.Chrome(ChromeDriverManager().install(),\n  File \"/home/runner/.local/lib/python3.8/site-packages/selenium/webdriver/chrome/webdriver.py\", line 70, in __init__\n    super(WebDriver, self).__init__(DesiredCapabilities.CHROME['browserName'], \"goog\",\n  File \"/home/runner/.local/lib/python3.8/site-packages/selenium/webdriver/chromium/webdriver.py\", line 93, in __init__\n    RemoteWebDriver.__init__(\n  File \"/home/runner/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py\", line 269, in __init__\n    self.start_session(capabilities, browser_profile)\n  File \"/home/runner/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py\", line 360, in start_session\n    response = self.execute(Command.NEW_SESSION, parameters)\n  File \"/home/runner/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py\", line 425, in execute\n    self.error_handler.check_response(response)\n  File \"/home/runner/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py\", line 247, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "description" : "\n        Попытка авторизации с невалидным паролем.\n        ",
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x56198609dad3 <unknown>\n#1 0x561985dfd568 <unknown>\n#2 0x561985e20b37 <unknown>\n#3 0x561985e1c23a <unknown>\n#4 0x561985e572ba <unknown>\n#5 0x561985e514e3 <unknown>\n#6 0x561985e26d1a <unknown>\n#7 0x561985e27e75 <unknown>\n#8 0x5619860cbefd <unknown>\n#9 0x5619860e519b <unknown>\n#10 0x5619860cdc65 <unknown>\n#11 0x5619860e5ec8 <unknown>\n#12 0x5619860c1360 <unknown>\n#13 0x561986101a68 <unknown>\n#14 0x561986101be8 <unknown>\n#15 0x56198611b7fd <unknown>\n#16 0x7f6ce8838609 <unknown>",
+    "statusTrace" : "request = <SubRequest 'app' for <Function test_login_with_invalid_password>>\n\n    @pytest.fixture\n    def app(request):\n        url = request.config.getoption(\"--url\")\n        logger.info(f\"Start app on {url}\")\n        headless = request.config.getoption(\"--headless\")\n        chrome_options = Options()\n        chrome_options.add_argument(\"window-size=1800,1080\")\n        if headless:\n            chrome_options.headless = True\n        else:\n            chrome_options.headless = False\n>       driver = webdriver.Chrome(ChromeDriverManager().install(),\n                                  options=chrome_options)\n\nconftest.py:38: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n../../../.local/lib/python3.8/site-packages/selenium/webdriver/chrome/webdriver.py:70: in __init__\n    super(WebDriver, self).__init__(DesiredCapabilities.CHROME['browserName'], \"goog\",\n../../../.local/lib/python3.8/site-packages/selenium/webdriver/chromium/webdriver.py:93: in __init__\n    RemoteWebDriver.__init__(\n../../../.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py:269: in __init__\n    self.start_session(capabilities, browser_profile)\n../../../.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py:360: in start_session\n    response = self.execute(Command.NEW_SESSION, parameters)\n../../../.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py:425: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x7f7728cb3520>\nresponse = {'status': 500, 'value': '{\"value\":{\"error\":\"unknown error\",\"message\":\"unknown error: Chrome failed to start: exited a...\\\\n#14 0x561986101be8 \\\\u003Cunknown>\\\\n#15 0x56198611b7fd \\\\u003Cunknown>\\\\n#16 0x7f6ce8838609 \\\\u003Cunknown>\\\\n\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, str):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:\n            exception_class = NoSuchShadowRootException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if not value:\n            value = response['value']\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None  # type: ignore[assignment]\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        st_value = value.get('stackTrace') or value.get('stacktrace')\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split('\\n')\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = self._value_or_default(frame, 'lineNumber', '')\n                        file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                        if line:\n                            file = \"%s:%s\" % (file, line)\n                        meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                        if 'className' in frame:\n                            meth = \"%s.%s\" % (frame['className'], meth)\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\nE         (unknown error: DevToolsActivePort file doesn't exist)\nE         (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nE       Stacktrace:\nE       #0 0x56198609dad3 <unknown>\nE       #1 0x561985dfd568 <unknown>\nE       #2 0x561985e20b37 <unknown>\nE       #3 0x561985e1c23a <unknown>\nE       #4 0x561985e572ba <unknown>\nE       #5 0x561985e514e3 <unknown>\nE       #6 0x561985e26d1a <unknown>\nE       #7 0x561985e27e75 <unknown>\nE       #8 0x5619860cbefd <unknown>\nE       #9 0x5619860e519b <unknown>\nE       #10 0x5619860cdc65 <unknown>\nE       #11 0x5619860e5ec8 <unknown>\nE       #12 0x5619860c1360 <unknown>\nE       #13 0x561986101a68 <unknown>\nE       #14 0x561986101be8 <unknown>\nE       #15 0x56198611b7fd <unknown>\nE       #16 0x7f6ce8838609 <unknown>\n\n../../../.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py:247: WebDriverException",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f36cdf7a2aded730",
+      "name" : "log",
+      "source" : "f36cdf7a2aded730.txt",
+      "type" : "text/plain",
+      "size" : 438
+    }, {
+      "uid" : "321fcf90b4077af",
+      "name" : "stderr",
+      "source" : "321fcf90b4077af.txt",
+      "type" : "text/plain",
+      "size" : 237
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Test good test and bad test"
+  }, {
+    "name" : "feature",
+    "value" : "Test login"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_login_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLoginPage"
+  }, {
+    "name" : "host",
+    "value" : "fv-az292-76"
+  }, {
+    "name" : "thread",
+    "value" : "2221-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_login_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 7,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "3a74f3549ad232a2",
+        "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/12//#testresult/3a74f3549ad232a2",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5607d06b6ad3 <unknown>\n#1 0x5607d0416568 <unknown>\n#2 0x5607d0439b37 <unknown>\n#3 0x5607d043523a <unknown>\n#4 0x5607d04702ba <unknown>\n#5 0x5607d046a4e3 <unknown>\n#6 0x5607d043fd1a <unknown>\n#7 0x5607d0440e75 <unknown>\n#8 0x5607d06e4efd <unknown>\n#9 0x5607d06fe19b <unknown>\n#10 0x5607d06e6c65 <unknown>\n#11 0x5607d06feec8 <unknown>\n#12 0x5607d06da360 <unknown>\n#13 0x5607d071aa68 <unknown>\n#14 0x5607d071abe8 <unknown>\n#15 0x5607d07347fd <unknown>\n#16 0x7fc43b8e3609 <unknown>",
+        "time" : {
+          "start" : 1650903806963,
+          "stop" : 1650903806963,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "db60cc14fb378bb5",
+        "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/9//#testresult/db60cc14fb378bb5",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5640c92a1ad3 <unknown>\n#1 0x5640c9001568 <unknown>\n#2 0x5640c9024b37 <unknown>\n#3 0x5640c902023a <unknown>\n#4 0x5640c905b2ba <unknown>\n#5 0x5640c90554e3 <unknown>\n#6 0x5640c902ad1a <unknown>\n#7 0x5640c902be75 <unknown>\n#8 0x5640c92cfefd <unknown>\n#9 0x5640c92e919b <unknown>\n#10 0x5640c92d1c65 <unknown>\n#11 0x5640c92e9ec8 <unknown>\n#12 0x5640c92c5360 <unknown>\n#13 0x5640c9305a68 <unknown>\n#14 0x5640c9305be8 <unknown>\n#15 0x5640c931f7fd <unknown>\n#16 0x7f75b725c609 <unknown>",
+        "time" : {
+          "start" : 1650554006127,
+          "stop" : 1650554006127,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "4f2fedf9be23826c",
+        "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/8//#testresult/4f2fedf9be23826c",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x557d6852aad3 <unknown>\n#1 0x557d6828a568 <unknown>\n#2 0x557d682adb37 <unknown>\n#3 0x557d682a923a <unknown>\n#4 0x557d682e42ba <unknown>\n#5 0x557d682de4e3 <unknown>\n#6 0x557d682b3d1a <unknown>\n#7 0x557d682b4e75 <unknown>\n#8 0x557d68558efd <unknown>\n#9 0x557d6857219b <unknown>\n#10 0x557d6855ac65 <unknown>\n#11 0x557d68572ec8 <unknown>\n#12 0x557d6854e360 <unknown>\n#13 0x557d6858ea68 <unknown>\n#14 0x557d6858ebe8 <unknown>\n#15 0x557d685a87fd <unknown>\n#16 0x7fc529886609 <unknown>",
+        "time" : {
+          "start" : 1650553929213,
+          "stop" : 1650553929213,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "c9570aabb62c5f36",
+        "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/7//#testresult/c9570aabb62c5f36",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x560ceb1b5ad3 <unknown>\n#1 0x560ceaf15568 <unknown>\n#2 0x560ceaf38b37 <unknown>\n#3 0x560ceaf3423a <unknown>\n#4 0x560ceaf6f2ba <unknown>\n#5 0x560ceaf694e3 <unknown>\n#6 0x560ceaf3ed1a <unknown>\n#7 0x560ceaf3fe75 <unknown>\n#8 0x560ceb1e3efd <unknown>\n#9 0x560ceb1fd19b <unknown>\n#10 0x560ceb1e5c65 <unknown>\n#11 0x560ceb1fdec8 <unknown>\n#12 0x560ceb1d9360 <unknown>\n#13 0x560ceb219a68 <unknown>\n#14 0x560ceb219be8 <unknown>\n#15 0x560ceb2337fd <unknown>\n#16 0x7f2439f17609 <unknown>",
+        "time" : {
+          "start" : 1650553745282,
+          "stop" : 1650553745282,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "e959f7b50e5c4044",
+        "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/6//#testresult/e959f7b50e5c4044",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55734bda3ad3 <unknown>\n#1 0x55734bb03568 <unknown>\n#2 0x55734bb26b37 <unknown>\n#3 0x55734bb2223a <unknown>\n#4 0x55734bb5d2ba <unknown>\n#5 0x55734bb574e3 <unknown>\n#6 0x55734bb2cd1a <unknown>\n#7 0x55734bb2de75 <unknown>\n#8 0x55734bdd1efd <unknown>\n#9 0x55734bdeb19b <unknown>\n#10 0x55734bdd3c65 <unknown>\n#11 0x55734bdebec8 <unknown>\n#12 0x55734bdc7360 <unknown>\n#13 0x55734be07a68 <unknown>\n#14 0x55734be07be8 <unknown>\n#15 0x55734be217fd <unknown>\n#16 0x7fc0f6212609 <unknown>",
+        "time" : {
+          "start" : 1650553590502,
+          "stop" : 1650553590502,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "f2c444c1dc3cde0",
+        "reportUrl" : "https://ArkadiyVoronov.github.io/Test_with_a_team/4//#testresult/f2c444c1dc3cde0",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55c67ae07ad3 <unknown>\n#1 0x55c67ab67568 <unknown>\n#2 0x55c67ab8ab37 <unknown>\n#3 0x55c67ab8623a <unknown>\n#4 0x55c67abc12ba <unknown>\n#5 0x55c67abbb4e3 <unknown>\n#6 0x55c67ab90d1a <unknown>\n#7 0x55c67ab91e75 <unknown>\n#8 0x55c67ae35efd <unknown>\n#9 0x55c67ae4f19b <unknown>\n#10 0x55c67ae37c65 <unknown>\n#11 0x55c67ae4fec8 <unknown>\n#12 0x55c67ae2b360 <unknown>\n#13 0x55c67ae6ba68 <unknown>\n#14 0x55c67ae6bbe8 <unknown>\n#15 0x55c67ae857fd <unknown>\n#16 0x7fea447c2609 <unknown>",
+        "time" : {
+          "start" : 1650552888844,
+          "stop" : 1650552888844,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "94bba2c86883e080.json",
+  "parameterValues" : [ ]
+}

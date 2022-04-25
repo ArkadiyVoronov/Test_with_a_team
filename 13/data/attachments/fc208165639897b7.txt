@@ -1,0 +1,8 @@
+2022-04-25 16:26:19 INFO Registered user 862_lwalton@example.org pass = l0MbI)As@*
+2022-04-25 16:26:19 INFO Start app on https://berpress.github.io/react-shop/
+2022-04-25 16:26:19 INFO 
+
+2022-04-25 16:26:19 INFO ====== WebDriver manager ======
+2022-04-25 16:26:19 INFO Current google-chrome version is 100.0.4896
+2022-04-25 16:26:19 INFO Get LATEST chromedriver version for 100.0.4896 google-chrome
+2022-04-25 16:26:19 INFO Driver [/home/runner/.wdm/drivers/chromedriver/linux64/100.0.4896.60/chromedriver] found in cache

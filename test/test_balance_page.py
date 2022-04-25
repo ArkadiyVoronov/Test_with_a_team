@@ -2,7 +2,8 @@ import time
 from fixtures.constants import Notice
 from models.balance import BalanceUserModel
 
-
+@allure.feature('Test card')
+@allure.story('Test balance')
 class TestBalancePage:
     def test_balance_transfer(self, app, login_user):
         """

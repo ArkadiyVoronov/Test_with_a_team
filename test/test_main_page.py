@@ -1,12 +1,14 @@
+import allure
 import pytest
 import time
 from selenium.common.exceptions import NoSuchElementException
 
 from fixtures.constants import Notice
 
-
+@allure.feature('Test main page')
 class TestMainPage:
 
+    @allure.story('Add to basket')
     def test_add_product_to_basket(self, app):
         """
         Открываем главную страницу и проверяем, что карточки продуктов доступны для добавления в корзину.

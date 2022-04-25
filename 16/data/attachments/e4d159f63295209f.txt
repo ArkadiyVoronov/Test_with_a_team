@@ -1,0 +1,11 @@
+2022-04-25 17:48:24 INFO Start app on https://berpress.github.io/react-shop/
+2022-04-25 17:48:24 INFO Drop old allure files : 0
+2022-04-25 17:48:24 INFO Create dir ./allure-results
+2022-04-25 17:48:24 INFO 
+
+2022-04-25 17:48:24 INFO ====== WebDriver manager ======
+2022-04-25 17:48:24 INFO Current google-chrome version is 100.0.4896
+2022-04-25 17:48:24 INFO Get LATEST chromedriver version for 100.0.4896 google-chrome
+2022-04-25 17:48:24 INFO There is no [linux64] chromedriver for browser 100.0.4896 in cache
+2022-04-25 17:48:24 INFO Trying to download new driver from https://chromedriver.storage.googleapis.com/100.0.4896.60/chromedriver_linux64.zip
+2022-04-25 17:48:25 INFO Driver has been saved in cache [/home/runner/.wdm/drivers/chromedriver/linux64/100.0.4896.60]

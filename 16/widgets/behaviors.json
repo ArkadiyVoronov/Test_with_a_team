@@ -1,0 +1,48 @@
+{
+  "total" : 4,
+  "items" : [ {
+    "uid" : "3bbb1387f17ae80fdf743c47ca250ddb",
+    "name" : "Test register",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 4,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "6d59591ae645373dc1ff5ae461bea5a2",
+    "name" : "Test main page",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 3,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "33403786cbd6241f76b433e2443a28e3",
+    "name" : "Test card",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "6d133343ff8cec674adc8c8db660eea8",
+    "name" : "Test login",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

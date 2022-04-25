@@ -1,0 +1,191 @@
+[ {
+  "uid" : "ee9e4bbd44e3b8b7",
+  "name" : "test_balance_transfer",
+  "time" : {
+    "start" : 1650905594682,
+    "stop" : 1650905594682,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "44f3209c0a1ee830",
+  "name" : "test_empty_card_name",
+  "time" : {
+    "start" : 1650905596258,
+    "stop" : 1650905596258,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "ea21524df8536b93",
+  "name" : "test_empty_card_date",
+  "time" : {
+    "start" : 1650905596351,
+    "stop" : 1650905596351,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "c81f8d94ff01d488",
+  "name" : "test_login_with_invalid_password",
+  "time" : {
+    "start" : 1650905596498,
+    "stop" : 1650905596498,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5925c9f87b29fe10",
+  "name" : "test_login_with_invalid_user",
+  "time" : {
+    "start" : 1650905596571,
+    "stop" : 1650905596571,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "934a72d78b1148f8",
+  "name" : "test_valid_registration",
+  "time" : {
+    "start" : 1650905596772,
+    "stop" : 1650905596772,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "f18ddbbe6ec84f74",
+  "name" : "test_empty_money",
+  "time" : {
+    "start" : 1650905596388,
+    "stop" : 1650905596388,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b5c52f86e94e651",
+  "name" : "test_error_small_balance",
+  "time" : {
+    "start" : 1650905596699,
+    "stop" : 1650905596699,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "a2112b5a36892fa0",
+  "name" : "test_success_shopping",
+  "time" : {
+    "start" : 1650905596736,
+    "stop" : 1650905596736,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "d3251962c93ced25",
+  "name" : "test_empty_checkbox",
+  "time" : {
+    "start" : 1650905596424,
+    "stop" : 1650905596424,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "13317202920e63ef",
+  "name" : "test_invalid_password_registration",
+  "time" : {
+    "start" : 1650905596846,
+    "stop" : 1650905596846,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "384ecf2c657b8e03",
+  "name" : "test_invalid_email_registration",
+  "time" : {
+    "start" : 1650905596809,
+    "stop" : 1650905596809,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "a80c105ef707c53e",
+  "name" : "test_empty_card_number",
+  "time" : {
+    "start" : 1650905596295,
+    "stop" : 1650905596295,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "c8e475131b47dec6",
+  "name" : "test_non_existent_user",
+  "time" : {
+    "start" : 1650905596624,
+    "stop" : 1650905596624,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "317512bf49d0a258",
+  "name" : "test_successful_login",
+  "time" : {
+    "start" : 1650905596462,
+    "stop" : 1650905596462,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "f6ecca3a4ecac1af",
+  "name" : "test_short_password_registration",
+  "time" : {
+    "start" : 1650905596899,
+    "stop" : 1650905596899,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5a56b91a925ec0c6",
+  "name" : "test_login_with_empty_password",
+  "time" : {
+    "start" : 1650905596535,
+    "stop" : 1650905596535,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "dc36a6c498644fe1",
+  "name" : "test_buy_empty_basket",
+  "time" : {
+    "start" : 1650905596697,
+    "stop" : 1650905596697,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "590796eb0fb81ae4",
+  "name" : "test_add_product_to_basket",
+  "time" : {
+    "start" : 1650905596661,
+    "stop" : 1650905596661,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

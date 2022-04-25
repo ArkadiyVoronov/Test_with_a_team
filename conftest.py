@@ -1,3 +1,4 @@
+import allure
 import logging
 import pytest
 import requests
@@ -24,11 +25,14 @@ def pytest_addoption(parser):
                      help="store API"),
 
 
-@pytest.fixture
+@pytest.fixture(scope="session")
 def app(request):
+    base_url = "https://berpress.github.io/react-shop/"
     url = request.config.getoption("--url")
     logger.info(f"Start app on {url}")
     headless = request.config.getoption("--headless")
+    report_dir = request.config.getoption("--alluredir")
+    fixture = Application(base_url, report_dir, headless)
     chrome_options = Options()
     chrome_options.add_argument("window-size=1800,1080")
     if headless:
@@ -71,3 +75,4 @@ def update_balance(app, login_user):
     app.balance_page.balance_transfer(data=data)
     app.balance_page.wait_notice()
     return data
+

@@ -1,11 +1,9 @@
-# Автотесты для сайта https://berpress.github.io/react-shop/
+Автотесты для сайта https://berpress.github.io/react-shop/
 
-[![Python application](https://github.com/ArkadiyVoronov/Test_with_a_team/actions/workflows/python-app.yml/badge.svg?event=deployment_status)](https://github.com/ArkadiyVoronov/Test_with_a_team/actions/workflows/python-app.yml)
-<img src="https://img.shields.io/github/issues-pr-closed/ArkadiyVoronov/Test_with_a_team.svg">
-[![Build Status](https://app.travis-ci.com/ArkadiyVoronov/Test_with_a_team.svg?branch=main)](https://app.travis-ci.com/ArkadiyVoronov/Test_with_a_team)
+[![Pytest Selenium Allure status](https://github.com/ArkadiyVoronov/Test_with_a_team/actions/workflows/pytest_selenium_allure.yml/badge.svg)](https://github.com/ArkadiyVoronov/Test_with_a_team/actions/workflows/pytest_selenium_allure.yml)
 
 
-# Локальный запуск
+Локальный запуск
 
 Для локального запуска необходим Python версии 3.8 и выше
 При первом запуске надо создать виртуальное окружение
@@ -33,17 +31,20 @@ pytest
 ```
 ---
 
-# Проверка кода организована через pre-commit
+Проверка кода организована через pre-commit
 Подробнее https://pre-commit.com/
----
-# CI организован через https://semgrep.dev/
 
 ---
-# Логирование реализовано через пакет logging
+
+CI организован через https://semgrep.dev/
+
+---
+Логирование реализовано через пакет logging
 Подробнее https://docs.python.org/3/library/logging.html
 
 ---
-
+[Allure-report](https://arkadiyvoronov.github.io/Test_with_a_team/)
+---
 
 Чек-лист команды:
 + [x] договорились о работе в ветках, наименование фича_бранч
@@ -57,5 +58,5 @@ pytest
 + [x] добавить ci\cd
 + [x] добавить линтер
 + [x] добавить логи
-+ [ ] добавить отчеты
++ [x] добавить отчеты
 

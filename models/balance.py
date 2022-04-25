@@ -5,9 +5,10 @@ fake = Faker()
 
 
 class BalanceUserModel:
-    """Генерация фейковых данных для валидной операции пополнения баланка карты."""
+    """Генерация фейковых данных для валидной операции пополнения баланса карты."""
 
-    def __init__(self, user: str = None, card_number: str = None, card_date: str = None, card_total: str = None):
+    def __init__(self, user: str = None, card_number: str = None,
+                 card_date: str = None, card_total: str = None):
         self.user = user
         self.card_number = card_number
         self.card_date = card_date
@@ -20,4 +21,5 @@ class BalanceUserModel:
         date = fake.date(pattern="%Y/%m")
         total = str(random.randint(100, 1000))
 
-        return BalanceUserModel(user=user, card_number=card, card_date=date, card_total=total)
+        return BalanceUserModel(user=user, card_number=card,
+                                card_date=date, card_total=total)

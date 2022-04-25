@@ -1,7 +1,8 @@
 from fixtures.constants import Notice
 from models.register import RegisterUserModel
 
-
+@allure.feature('Test login')
+@allure.story('Test good test and bad test')
 class TestLoginPage:
 
     def test_successful_login(self, app, register_user):

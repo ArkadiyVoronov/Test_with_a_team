@@ -3,7 +3,7 @@ from models.register import RegisterUserModel
 import allure
 
 @allure.feature('Test login')
-@allure.story('Test good test and bad test')
+@allure.story('Test good tests and bad tests')
 class TestLoginPage:
 
     def test_successful_login(self, app, register_user):
